@@ -1,0 +1,6 @@
+framework module Pods_Rolling {
+  umbrella header "Pods-Rolling-umbrella.h"
+
+  export *
+  module * { export * }
+}
