@@ -24,12 +24,7 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
-        
-        
-        tableView.isScrollEnabled = false
-        //Prohibit user to scroll the table.
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +39,7 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let settingCell = tableView.dequeueReusableCell(withIdentifier: "settingCell")! as UITableViewCell
+        
         
         if indexPath.section == 0 {
         settingCell.textLabel?.text = showData().settingOption1/*[indexPath.section]*/[indexPath.row]
@@ -164,7 +160,10 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
            
         }*/
         
-        if tableView.indexPathForSelectedRow?.row == 1 && tableView.indexPathForSelectedRow?.section == 1 {
+    
+        if tableView.indexPathForSelectedRow?.row == 2 && tableView.indexPathForSelectedRow?.section == 0 {
+            performSegue(withIdentifier: "furtherDefineTheTime", sender: self)
+        } else if tableView.indexPathForSelectedRow?.row == 1 && tableView.indexPathForSelectedRow?.section == 1 {
             performSegue(withIdentifier: "ShowTheGuide", sender: self)
         } else if tableView.indexPathForSelectedRow?.row == 2 && tableView.indexPathForSelectedRow?.section == 1 {
             orderOfSendAnEmailToReportTheProblem()

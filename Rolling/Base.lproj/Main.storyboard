@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Efx-Hx-7DV">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -45,18 +45,18 @@
                         <viewControllerLayoutGuide type="bottom" id="NFe-fQ-DZg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4wa-vC-SqC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xke-PY-RDb" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="469" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="381" width="320" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xke-PY-RDb" secondAttribute="height" multiplier="32:5" id="Ygs-tY-9zA"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dGG-1D-ohb">
-                                <rect key="frame" x="39" y="86.5" width="242" height="336"/>
+                                <rect key="frame" x="39" y="42" width="242" height="336"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-DC-dGi">
                                         <rect key="frame" x="0.0" y="0.0" width="242" height="146"/>
@@ -176,22 +176,22 @@
                         <viewControllerLayoutGuide type="bottom" id="QxQ-iR-M2h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w5T-9S-LgU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtq-3V-gUb">
-                                <rect key="frame" x="0.0" y="64" width="320" height="210"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="166"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVr-NU-qyh">
-                                <rect key="frame" x="0.0" y="274" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="230" width="320" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="ueg-8U-zvN"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aMC-RJ-r6r">
-                                <rect key="frame" x="126" y="294" width="168" height="80"/>
+                                <rect key="frame" x="126" y="250" width="168" height="80"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FAO-bF-FeU">
                                         <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
@@ -216,7 +216,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type the delima you confront!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeq-Hv-b24">
-                                <rect key="frame" x="0.0" y="144" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="122.5" width="320" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iLt-dy-adY"/>
                                 </constraints>
@@ -225,7 +225,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-iy-Xrz" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="120" y="419" width="80" height="80"/>
+                                <rect key="frame" x="120" y="375" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="58V-8j-ieF"/>
                                     <constraint firstAttribute="width" constant="80" id="w5A-ME-BZ0"/>
@@ -252,7 +252,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-Ml-Uti">
-                                <rect key="frame" x="26" y="294" width="80" height="80"/>
+                                <rect key="frame" x="26" y="250" width="80" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-LQ-LV6">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
@@ -314,7 +314,7 @@
             <objects>
                 <tableViewController modalTransitionStyle="crossDissolve" id="xsM-Mt-dHc" customClass="SettingTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ppm-yj-tVr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -345,6 +345,7 @@
                         <segue destination="KMJ-uo-uAj" kind="presentation" identifier="ShowTheSecretPicture" id="fOz-aQ-WaR"/>
                         <segue destination="zY8-ZM-yQ8" kind="show" identifier="ShowTheGuide" id="bIA-2A-H3T"/>
                         <segue destination="K19-mc-DYT" kind="show" identifier="DeveloperIntroduction" id="iaa-uf-47b"/>
+                        <segue destination="YTC-B1-tY4" kind="show" identifier="furtherDefineTheTime" id="heN-gn-Ngx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1u-Bp-xZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,11 +361,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2SX-25-QMs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fwd-2t-R0t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-yb-YkZ">
-                                <rect key="frame" x="35" y="189" width="250" height="190"/>
+                                <rect key="frame" x="35" y="145" width="250" height="190"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JJ韓" translatesAutoresizingMaskIntoConstraints="NO" id="6t9-HO-H7k">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
@@ -425,7 +426,7 @@
             <objects>
                 <tableViewController id="DQr-yj-cVg" customClass="IntroductionOfDeveloperTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="176" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xdd-ae-JLo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -749,6 +750,63 @@ His dream is to become a richer person with the incorporation of finance and pro
             </objects>
             <point key="canvasLocation" x="3765" y="1281"/>
         </scene>
+        <!--Notification Time View Controller-->
+        <scene sceneID="ATQ-bv-b1m">
+            <objects>
+                <viewController id="YTC-B1-tY4" customClass="NotificationTimeViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3zw-eg-RCJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbl-iS-aOP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2dR-nO-GVN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-OF-pj3">
+                                <rect key="frame" x="0.0" y="132" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="549456418.44724202">
+                                    <!--2018-05-31 10:46:58 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timeDatePickerAction:" destination="YTC-B1-tY4" eventType="valueChanged" id="zmC-N6-sWa"/>
+                                </connections>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEU-OE-m76">
+                                <rect key="frame" x="0.0" y="64" width="320" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-ih-BKX">
+                                        <rect key="frame" x="139" y="24" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tHB-ih-BKX" firstAttribute="centerX" secondItem="AEU-OE-m76" secondAttribute="centerX" id="XpX-xw-2By"/>
+                                    <constraint firstItem="tHB-ih-BKX" firstAttribute="centerY" secondItem="AEU-OE-m76" secondAttribute="centerY" id="lC0-jn-BRp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AEU-OE-m76" firstAttribute="leading" secondItem="2dR-nO-GVN" secondAttribute="leading" id="6T3-pe-1Tn"/>
+                            <constraint firstItem="AEU-OE-m76" firstAttribute="top" secondItem="3zw-eg-RCJ" secondAttribute="bottom" id="B3V-s9-eAC"/>
+                            <constraint firstAttribute="trailing" secondItem="AEU-OE-m76" secondAttribute="trailing" id="Y91-rt-Q0p"/>
+                            <constraint firstItem="pSW-OF-pj3" firstAttribute="centerX" secondItem="2dR-nO-GVN" secondAttribute="centerX" id="iqM-ZA-Sdb"/>
+                            <constraint firstItem="pSW-OF-pj3" firstAttribute="top" secondItem="AEU-OE-m76" secondAttribute="bottom" id="uNm-sR-hJz"/>
+                            <constraint firstItem="pSW-OF-pj3" firstAttribute="centerY" secondItem="2dR-nO-GVN" secondAttribute="centerY" id="xS9-vR-M46"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeDatePickerShow" destination="pSW-OF-pj3" id="qUv-LT-UNB"/>
+                        <outlet property="timeLabel" destination="tHB-ih-BKX" id="MJg-1D-KbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg4-5j-Vzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4556.25" y="865"/>
+        </scene>
         <!--Resuaurant ResultV Controller-->
         <scene sceneID="3Hu-KU-ZDo">
             <objects>
@@ -758,27 +816,27 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="9OJ-cC-iAh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rEi-II-QDp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Wy-10d">
-                                <rect key="frame" x="110" y="435" width="100" height="84"/>
+                                <rect key="frame" x="110" y="431" width="100" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="yN1-Im-fWp"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gIC-Fm-xf6">
-                                <rect key="frame" x="8" y="64" width="304" height="230"/>
+                                <rect key="frame" x="8" y="64" width="304" height="184"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultRestaurantPicture" translatesAutoresizingMaskIntoConstraints="NO" id="McE-C9-zWU">
-                                        <rect key="frame" x="64" y="0.0" width="176" height="176"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DefaultRestaurantPicture" translatesAutoresizingMaskIntoConstraints="NO" id="McE-C9-zWU">
+                                        <rect key="frame" x="64" y="0.0" width="176" height="154"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="176" id="gQi-BS-jkW"/>
                                             <constraint firstAttribute="height" constant="176" id="lIB-7Y-KrW"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please click the &quot;Again&quot; buttom below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PWd-V5-Cgc">
-                                        <rect key="frame" x="0.0" y="206" width="304" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please click the &quot;Again&quot; buttom below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PWd-V5-Cgc">
+                                        <rect key="frame" x="0.0" y="184" width="304" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -786,7 +844,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGZ-dF-ieJ" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="120" y="437" width="80" height="80"/>
+                                <rect key="frame" x="120" y="391" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="RWG-pG-0Tw"/>
                                     <constraint firstAttribute="height" constant="80" id="hEQ-Ll-AHl"/>
@@ -812,14 +870,14 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </connections>
                             </button>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-aE-vME">
-                                <rect key="frame" x="0.0" y="304" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="258" width="320" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="WPS-4m-9s8"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-4W-d7D">
-                                <rect key="frame" x="18.5" y="309" width="283.5" height="107"/>
+                                <rect key="frame" x="18.5" y="263" width="283.5" height="107"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-bU-716">
                                         <rect key="frame" x="0.0" y="0.0" width="283.5" height="31"/>
@@ -902,7 +960,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="gjM-A7-4Xb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2eo-jQ-vI6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-Ub-5db">
@@ -975,7 +1033,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="Syf-z2-xYN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="196-KG-HJu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-yH-a5z">
@@ -993,7 +1051,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ud-Gr-lN8">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -1107,28 +1165,28 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="kOc-PJ-Jub"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pem-68-emc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flf-5X-yjC" customClass="straightLine" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="276" width="320" height="16"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="16"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="CkG-yh-ObT"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="introductionName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0a-SX-Rnh">
-                                <rect key="frame" x="16" y="244" width="288" height="24"/>
+                                <rect key="frame" x="16" y="200" width="288" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-wc-liA">
-                                <rect key="frame" x="0.0" y="64" width="320" height="160"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="116"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="introductionDescription" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZN-dN-hu4">
-                                <rect key="frame" x="40" y="300" width="240" height="45"/>
+                                <rect key="frame" x="40" y="256" width="240" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6Kq-Xj-Pcd"/>
                                 </constraints>
@@ -1137,25 +1195,25 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-Rh-yzW">
-                                <rect key="frame" x="41" y="360" width="238" height="144"/>
+                                <rect key="frame" x="41" y="316" width="238" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VBH-KH-O2y">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="26.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-d8-XCI">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="41.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215686274503" green="0.59215686274509804" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-zu-14E">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="41.5"/>
+                                                <rect key="frame" x="82.5" y="0.0" width="73" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rK-tD-MIM">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="41.5"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1163,22 +1221,22 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-0Q-h1k">
-                                        <rect key="frame" x="0.0" y="51.5" width="238" height="41"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="238" height="27"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUo-DL-D0h">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="27"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJx-3y-yog">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="41"/>
+                                                <rect key="frame" x="82.5" y="0.0" width="73" height="27"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJs-3U-PAn">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="41"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="27"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1186,22 +1244,22 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nn4-Bf-826">
-                                        <rect key="frame" x="0.0" y="102.5" width="238" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="73.5" width="238" height="26.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetarian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph3-ob-mC8">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="41.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spicy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZf-I8-bCE">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="41.5"/>
+                                                <rect key="frame" x="82.5" y="0.0" width="73" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Rice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7H0-Cd-BlN">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="41.5"/>
+                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1263,7 +1321,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="VTT-pf-jTa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c9z-aj-fYO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="slides" translatesAutoresizingMaskIntoConstraints="NO" id="htq-tP-x2L">
@@ -1273,17 +1331,17 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-sm-owQ">
-                                <rect key="frame" x="16" y="244" width="288" height="314"/>
+                                <rect key="frame" x="16" y="244" width="288" height="226"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Pirture of Product 1" translatesAutoresizingMaskIntoConstraints="NO" id="iwH-Fh-jcl">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="152"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.4823529412" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iwH-Fh-jcl" secondAttribute="height" multiplier="72:31" id="wHW-0u-PCo"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background photo of product 2" translatesAutoresizingMaskIntoConstraints="NO" id="NO6-v7-tgz">
-                                        <rect key="frame" x="0.0" y="162" width="288" height="152"/>
+                                        <rect key="frame" x="0.0" y="118" width="288" height="108"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.4823529412" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="NO6-v7-tgz" secondAttribute="height" multiplier="288:131" id="e2e-Xv-s3w"/>
@@ -1292,11 +1350,11 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-36-5te">
-                                <rect key="frame" x="141" y="164" width="39" height="37"/>
+                                <rect key="frame" x="140.5" y="164" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FST-1n-XC7">
-                                <rect key="frame" x="35" y="270.5" width="250" height="100"/>
+                                <rect key="frame" x="35" y="248" width="250" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eleminate the Advertisement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkH-2J-Kbx">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -1348,7 +1406,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-UR-iQ2">
-                                <rect key="frame" x="35" y="432" width="250" height="100"/>
+                                <rect key="frame" x="35" y="366" width="250" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ0-Be-E6Y">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -1460,7 +1518,7 @@ His dream is to become a richer person with the incorporation of finance and pro
             <objects>
                 <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="8ff-Fy-Hif" customClass="VocubularyTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jin-SR-Ty5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1505,7 +1563,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="dRf-SV-LXB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nyj-YN-MK0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SelectedVocabulary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaE-HN-AuL">
@@ -1641,14 +1699,14 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="5MM-vj-8Tz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AFx-vf-B2b">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uba-7Z-TW4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnm-ED-fE3" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="469" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="381" width="320" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qnm-ED-fE3" secondAttribute="height" multiplier="32:5" id="dco-Dk-u8i"/>

@@ -20,6 +20,7 @@
 		1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */; };
 		1B22B3531F74F94300FF3E36 /* VocabularyResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */; };
 		1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */; };
+		1B356DB320C00A5100BBDAFA /* NotificationTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */; };
 		1B6263EE1F8632C500B6E3E4 /* BuyingButtomAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */; };
 		1B687DEC1F91CB7000AA3A11 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */; };
 		1B687DF01F93C05300AA3A11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */; };
@@ -60,6 +61,7 @@
 		1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResuaurantResultVController.swift; sourceTree = "<group>"; };
 		1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabularyResultVController.swift; sourceTree = "<group>"; };
 		1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelectionViewController.swift; sourceTree = "<group>"; };
+		1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewController.swift; sourceTree = "<group>"; };
 		1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyingButtomAppearance.swift; sourceTree = "<group>"; };
 		1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */,
 				1BF4BFAA1F8904F40093DCE0 /* SecretPictureVController.swift */,
 				1BC83E0620BD579300CFBE7B /* IntroductionOfBuilderViewController.swift */,
+				1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */,
 			);
 			name = "Setting Part";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */,
 				1B9973911F979CBC0026E0AE /* DetectInternet.swift in Sources */,
 				1B712F931FA9E47800EAB50B /* MapVC.swift in Sources */,
+				1B356DB320C00A5100BBDAFA /* NotificationTimeViewController.swift in Sources */,
 				1BD1BA291F84DB8100202961 /* AD.swift in Sources */,
 				1B2285931F7504F900A7322D /* ChoosingButtomVController.swift in Sources */,
 				1BDC90441F7A49BD00E566EE /* RestaurantStatusVController.swift in Sources */,
