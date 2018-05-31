@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMobileAds
 import Alamofire
+import UserNotifications
 
 class ChoosingViewController: UIViewController, GADBannerViewDelegate {
     
@@ -55,11 +56,14 @@ class ChoosingViewController: UIViewController, GADBannerViewDelegate {
         BannerAD.adUnitID = "ca-app-pub-1918665180874414/3343744332"
         BannerAD.rootViewController = self
         BannerAD.delegate = self
-        
         BannerAD.load(GADRequest())
+        //應用程式id:ca-app-pub-1918665180874414~5652366993
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        //Request user to enable the function of notification.
     }
     
-    //應用程式id:ca-app-pub-1918665180874414~5652366993
+    
     
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .default

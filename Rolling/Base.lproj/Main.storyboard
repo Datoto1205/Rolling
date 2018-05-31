@@ -343,8 +343,8 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="KMJ-uo-uAj" kind="presentation" identifier="ShowTheSecretPicture" id="fOz-aQ-WaR"/>
-                        <segue destination="DQr-yj-cVg" kind="show" identifier="DeveloperIntroduction" id="co2-UB-S6i"/>
                         <segue destination="zY8-ZM-yQ8" kind="show" identifier="ShowTheGuide" id="bIA-2A-H3T"/>
+                        <segue destination="K19-mc-DYT" kind="show" identifier="DeveloperIntroduction" id="iaa-uf-47b"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1u-Bp-xZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,7 +476,90 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLW-Er-5x9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4558" y="-90"/>
+            <point key="canvasLocation" x="7125" y="-596"/>
+        </scene>
+        <!--Introduction Of Builder View Controller-->
+        <scene sceneID="xe2-lk-8Cm">
+            <objects>
+                <viewController id="K19-mc-DYT" customClass="IntroductionOfBuilderViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zZa-jT-WNq"/>
+                        <viewControllerLayoutGuide type="bottom" id="61k-lB-T5j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AED-0F-Pkv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-ft-Ug1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="651"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piS-pU-rPb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zU-Ev-8Uy">
+                                                <rect key="frame" x="20" y="303" width="280" height="385.5"/>
+                                                <string key="text">The developer of this App is a taiwanese programming novice. He graduated from NTPU in 2017, so he own some experiences about the restaurant near NTPU. 
+
+While he was an graduate student in NTPU, he reckon that he had difficulties to choose the food he wanted to eat, because he have stayed in this area for four years, and he was weary of the same food list. He hoped that he could use program to solve this problem. 
+
+His dream is to become a richer person with the incorporation of finance and program, and use his knowledge to change the world.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Li Cheng-En" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-GD-tTu">
+                                                <rect key="frame" x="96.5" y="256" width="127" height="27"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fOa-GD-tTu" firstAttribute="centerX" secondItem="piS-pU-rPb" secondAttribute="centerX" id="7LD-vn-6Ly"/>
+                                            <constraint firstItem="2zU-Ev-8Uy" firstAttribute="centerX" secondItem="piS-pU-rPb" secondAttribute="centerX" id="B0R-TH-Pqw"/>
+                                            <constraint firstItem="2zU-Ev-8Uy" firstAttribute="leading" secondItem="piS-pU-rPb" secondAttribute="leading" constant="20" id="HNd-bY-9L2"/>
+                                            <constraint firstItem="2zU-Ev-8Uy" firstAttribute="top" secondItem="fOa-GD-tTu" secondAttribute="bottom" constant="20" id="Ief-x3-tc6"/>
+                                            <constraint firstAttribute="height" constant="700" id="JeQ-N8-kvh"/>
+                                            <constraint firstAttribute="trailing" secondItem="2zU-Ev-8Uy" secondAttribute="trailing" constant="20" id="lLZ-Xi-aqU"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile photo of developer" translatesAutoresizingMaskIntoConstraints="NO" id="EdC-wB-CdM">
+                                        <rect key="frame" x="72" y="40" width="176" height="176"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="176" id="aUa-a0-0Qu"/>
+                                            <constraint firstAttribute="width" constant="176" id="c96-zx-4Rb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="piS-pU-rPb" firstAttribute="leading" secondItem="KuE-ft-Ug1" secondAttribute="leading" id="8P2-xk-7L8"/>
+                                    <constraint firstItem="piS-pU-rPb" firstAttribute="centerX" secondItem="KuE-ft-Ug1" secondAttribute="centerX" id="9KN-Bg-roJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="piS-pU-rPb" secondAttribute="trailing" id="CPI-ES-g5B"/>
+                                    <constraint firstAttribute="bottom" secondItem="piS-pU-rPb" secondAttribute="bottom" id="LBH-YS-Eqx"/>
+                                    <constraint firstItem="piS-pU-rPb" firstAttribute="top" secondItem="KuE-ft-Ug1" secondAttribute="top" id="hPU-MV-Qct"/>
+                                    <constraint firstItem="fOa-GD-tTu" firstAttribute="top" secondItem="EdC-wB-CdM" secondAttribute="bottom" constant="40" id="p1p-Uc-SJd"/>
+                                    <constraint firstItem="EdC-wB-CdM" firstAttribute="top" secondItem="KuE-ft-Ug1" secondAttribute="top" constant="40" id="riV-8H-eNT"/>
+                                    <constraint firstItem="EdC-wB-CdM" firstAttribute="centerX" secondItem="KuE-ft-Ug1" secondAttribute="centerX" id="ysA-vi-2cu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KuE-ft-Ug1" firstAttribute="top" secondItem="AED-0F-Pkv" secondAttribute="top" id="7Hf-VO-DX7"/>
+                            <constraint firstItem="KuE-ft-Ug1" firstAttribute="leading" secondItem="AED-0F-Pkv" secondAttribute="leading" id="hSy-eo-CeZ"/>
+                            <constraint firstItem="61k-lB-T5j" firstAttribute="top" secondItem="KuE-ft-Ug1" secondAttribute="bottom" id="jtF-bp-0HZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KuE-ft-Ug1" secondAttribute="trailing" id="vty-td-dKZ"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="photo" destination="EdC-wB-CdM" id="s9F-AG-The"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEF-gM-6uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4558" y="14"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XeA-eh-SPT">
@@ -512,7 +595,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An App to help you make decision." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-vn-zjd">
                                                 <rect key="frame" x="10" y="231.5" width="300" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-9U-o2V">
@@ -523,70 +606,70 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-Xd-Yie">
-                                                <rect key="frame" x="10" y="452" width="300" height="122"/>
+                                                <rect key="frame" x="20" y="452" width="280" height="142.5"/>
                                                 <string key="text">In the "Random Decision" page, after you clicked the buttom, you not only could decide the restaurants in which you want to have your meal more easily, but you could gain a satisfying solution when you stayed in a delima.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="loR-UF-Gsh">
-                                                <rect key="frame" x="0.0" y="594" width="320" height="160"/>
+                                                <rect key="frame" x="0.0" y="614.5" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="loR-UF-Gsh" secondAttribute="height" multiplier="2:1" id="vW3-cm-XTH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-TY-2CA">
-                                                <rect key="frame" x="10" y="774" width="300" height="142.5"/>
+                                                <rect key="frame" x="20" y="794.5" width="280" height="142.5"/>
                                                 <string key="text">In the "Restaurant" page, you could scan the list of all of the restaurants around the campus of National Taipei University. You even could further see the property of each restaurant, such as the price and the time we recommend you to visit.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkt-TL-JAD">
-                                                <rect key="frame" x="0.0" y="936" width="320" height="160"/>
+                                                <rect key="frame" x="0.0" y="956.5" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the &quot;Garbage Can&quot; page, you could scan all of the public garbage cans on the campus of National Taipei University. " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOI-hv-Arv">
-                                                <rect key="frame" x="10" y="1116" width="300" height="81.5"/>
+                                                <rect key="frame" x="20" y="1136.5" width="280" height="81.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequent Asked Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3b-kj-XEc">
-                                                <rect key="frame" x="24" y="1262.5" width="273" height="26.5"/>
+                                                <rect key="frame" x="24" y="1283" width="273" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiN-je-taI" customClass="straightLine" customModule="Rolling" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="1217.5" width="320" height="15"/>
+                                                <rect key="frame" x="0.0" y="1238" width="320" height="15"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="sqw-H3-iJE"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1: Why could not I use the function of “Random Restaurant” without the connection of internet?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-Wn-7fF">
-                                                <rect key="frame" x="10" y="1319" width="300" height="61"/>
+                                                <rect key="frame" x="10" y="1339.5" width="300" height="61"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.090196080509999998" green="0.30196079609999998" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A1: Because we have some technique problems, so please connect to the internet when you use this function now." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYk-FW-FcW">
-                                                <rect key="frame" x="10" y="1395" width="300" height="81.5"/>
+                                                <rect key="frame" x="10" y="1415.5" width="300" height="81.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q2: Why could not I report the problem in the App Store?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9t-62-Ggb">
-                                                <rect key="frame" x="10" y="1506.5" width="300" height="41"/>
+                                                <rect key="frame" x="10" y="1527" width="300" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.090196080509999998" green="0.30196079609999998" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzy-ax-NHY">
-                                                <rect key="frame" x="10" y="1562.5" width="300" height="122"/>
-                                                <string key="text">A2: Because we have not release this App in the App Store yet, so if you found some problems or bugs, please inform us with Google form until we decide to upload our App to the official store.</string>
+                                                <rect key="frame" x="10" y="1583" width="300" height="101.5"/>
+                                                <string key="text">A2: Because we have not release this App in the App Store yet, so if you found some problems or bugs, please inform us with email until we decide to upload our App to the official store.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -595,8 +678,8 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="loR-UF-Gsh" secondAttribute="trailing" id="0ZF-cd-vxt"/>
-                                            <constraint firstItem="gK2-Xd-Yie" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="3GG-S4-SZY"/>
-                                            <constraint firstItem="TOI-hv-Arv" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="3IA-9p-P6j"/>
+                                            <constraint firstItem="gK2-Xd-Yie" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="20" id="3GG-S4-SZY"/>
+                                            <constraint firstItem="TOI-hv-Arv" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="20" id="3IA-9p-P6j"/>
                                             <constraint firstItem="gK2-Xd-Yie" firstAttribute="top" secondItem="bKe-9U-o2V" secondAttribute="bottom" constant="20" id="3UT-pz-lNr"/>
                                             <constraint firstItem="hAE-TY-2CA" firstAttribute="top" secondItem="loR-UF-Gsh" secondAttribute="bottom" constant="20" id="5JY-QL-V9i"/>
                                             <constraint firstItem="Wzy-ax-NHY" firstAttribute="top" secondItem="t9t-62-Ggb" secondAttribute="bottom" constant="15" id="5Vi-7w-cZA"/>
@@ -611,9 +694,9 @@
                                             <constraint firstItem="HdE-Wn-7fF" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="Ooi-TY-JB6"/>
                                             <constraint firstAttribute="trailing" secondItem="cpB-Wx-jMh" secondAttribute="trailing" id="Oor-q6-7L7"/>
                                             <constraint firstItem="bKe-9U-o2V" firstAttribute="top" secondItem="JcP-vn-zjd" secondAttribute="bottom" constant="20" id="Rj2-cm-XJs"/>
-                                            <constraint firstAttribute="trailing" secondItem="gK2-Xd-Yie" secondAttribute="trailing" constant="10" id="Rmg-tb-bVR"/>
+                                            <constraint firstAttribute="trailing" secondItem="gK2-Xd-Yie" secondAttribute="trailing" constant="20" id="Rmg-tb-bVR"/>
                                             <constraint firstItem="9e2-fM-7Pw" firstAttribute="top" secondItem="cpB-Wx-jMh" secondAttribute="bottom" constant="25" id="V1o-AY-Wkl"/>
-                                            <constraint firstAttribute="trailing" secondItem="hAE-TY-2CA" secondAttribute="trailing" constant="10" id="VlE-qI-mvb"/>
+                                            <constraint firstAttribute="trailing" secondItem="hAE-TY-2CA" secondAttribute="trailing" constant="20" id="VlE-qI-mvb"/>
                                             <constraint firstItem="NYk-FW-FcW" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="WAh-kV-htE"/>
                                             <constraint firstAttribute="trailing" secondItem="bKe-9U-o2V" secondAttribute="trailing" id="Wda-6d-QIo"/>
                                             <constraint firstItem="rkt-TL-JAD" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" id="X9Z-KB-lzX"/>
@@ -628,14 +711,14 @@
                                             <constraint firstItem="rkt-TL-JAD" firstAttribute="top" secondItem="hAE-TY-2CA" secondAttribute="bottom" constant="20" id="fhA-8H-MyM"/>
                                             <constraint firstItem="cpB-Wx-jMh" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" id="gzd-UP-Wgx"/>
                                             <constraint firstItem="Wzy-ax-NHY" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="hgs-sr-ah6"/>
-                                            <constraint firstItem="hAE-TY-2CA" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="iaI-J6-SMC"/>
+                                            <constraint firstItem="hAE-TY-2CA" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="20" id="iaI-J6-SMC"/>
                                             <constraint firstItem="w3b-kj-XEc" firstAttribute="top" secondItem="qiN-je-taI" secondAttribute="bottom" constant="30" id="jmc-Rn-7yU"/>
                                             <constraint firstAttribute="trailing" secondItem="Wzy-ax-NHY" secondAttribute="trailing" constant="10" id="kI4-lV-Aoq"/>
                                             <constraint firstItem="NYk-FW-FcW" firstAttribute="top" secondItem="HdE-Wn-7fF" secondAttribute="bottom" constant="15" id="lFo-VK-uYe"/>
                                             <constraint firstAttribute="trailing" secondItem="HdE-Wn-7fF" secondAttribute="trailing" constant="10" id="mYe-gP-l4l"/>
                                             <constraint firstItem="9e2-fM-7Pw" firstAttribute="centerX" secondItem="vbx-fu-5V9" secondAttribute="centerX" id="nau-tA-cgl"/>
                                             <constraint firstItem="HdE-Wn-7fF" firstAttribute="top" secondItem="w3b-kj-XEc" secondAttribute="bottom" constant="30" id="p4X-cB-q0y"/>
-                                            <constraint firstAttribute="trailing" secondItem="TOI-hv-Arv" secondAttribute="trailing" constant="10" id="qyv-hh-S24"/>
+                                            <constraint firstAttribute="trailing" secondItem="TOI-hv-Arv" secondAttribute="trailing" constant="20" id="qyv-hh-S24"/>
                                             <constraint firstAttribute="trailing" secondItem="qiN-je-taI" secondAttribute="trailing" id="uOU-2X-SPf"/>
                                             <constraint firstAttribute="trailing" secondItem="NYk-FW-FcW" secondAttribute="trailing" constant="10" id="wMs-SA-J4k"/>
                                             <constraint firstItem="t9t-62-Ggb" firstAttribute="leading" secondItem="vbx-fu-5V9" secondAttribute="leading" constant="10" id="yCd-Ta-Yif"/>
@@ -664,7 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fz2-aI-nFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3765" y="934.85915492957747"/>
+            <point key="canvasLocation" x="3765" y="1281"/>
         </scene>
         <!--Resuaurant ResultV Controller-->
         <scene sceneID="3Hu-KU-ZDo">
@@ -1619,6 +1702,7 @@
         <image name="Background photo of product 2" width="973" height="468"/>
         <image name="DefaultRestaurantPicture" width="176" height="176"/>
         <image name="JJ韓" width="2448" height="2448"/>
+        <image name="Profile photo of developer" width="194" height="194"/>
         <image name="Setting Buttom" width="21" height="20"/>
         <image name="TabBarButtom-レストラン" width="37" height="28"/>
         <image name="TabBarButtom-単語表" width="38" height="23"/>

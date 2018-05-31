@@ -20,8 +20,6 @@
 		1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */; };
 		1B22B3531F74F94300FF3E36 /* VocabularyResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */; };
 		1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */; };
-		1B33FECD1F8A721600D0637F /* IntroductionOfDeveloperTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33FECC1F8A721600D0637F /* IntroductionOfDeveloperTVController.swift */; };
-		1B33FECF1F8A7C4F00D0637F /* IntroductionOfDeveloperTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B33FECE1F8A7C4F00D0637F /* IntroductionOfDeveloperTVCell.swift */; };
 		1B6263EE1F8632C500B6E3E4 /* BuyingButtomAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */; };
 		1B687DEC1F91CB7000AA3A11 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */; };
 		1B687DF01F93C05300AA3A11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */; };
@@ -36,6 +34,7 @@
 		1BAD97771F6E1408005994AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97761F6E1408005994AF /* Assets.xcassets */; };
 		1BAD977A1F6E1408005994AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97781F6E1408005994AF /* LaunchScreen.storyboard */; };
 		1BAD97861F6E23CB005994AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD97851F6E23CB005994AF /* TabBarController.swift */; };
+		1BC83E0720BD579300CFBE7B /* IntroductionOfBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC83E0620BD579300CFBE7B /* IntroductionOfBuilderViewController.swift */; };
 		1BD1BA271F84DB5200202961 /* AD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BD1BA261F84DB5100202961 /* AD.xib */; };
 		1BD1BA291F84DB8100202961 /* AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BA281F84DB8100202961 /* AD.swift */; };
 		1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */; };
@@ -61,8 +60,6 @@
 		1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResuaurantResultVController.swift; sourceTree = "<group>"; };
 		1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabularyResultVController.swift; sourceTree = "<group>"; };
 		1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelectionViewController.swift; sourceTree = "<group>"; };
-		1B33FECC1F8A721600D0637F /* IntroductionOfDeveloperTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionOfDeveloperTVController.swift; sourceTree = "<group>"; };
-		1B33FECE1F8A7C4F00D0637F /* IntroductionOfDeveloperTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionOfDeveloperTVCell.swift; sourceTree = "<group>"; };
 		1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyingButtomAppearance.swift; sourceTree = "<group>"; };
 		1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -79,6 +76,7 @@
 		1BAD97791F6E1408005994AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BAD977B1F6E1408005994AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAD97851F6E23CB005994AF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = ../TabBarController.swift; sourceTree = "<group>"; };
+		1BC83E0620BD579300CFBE7B /* IntroductionOfBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionOfBuilderViewController.swift; sourceTree = "<group>"; };
 		1BD1BA261F84DB5100202961 /* AD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AD.xib; sourceTree = "<group>"; };
 		1BD1BA281F84DB8100202961 /* AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AD.swift; sourceTree = "<group>"; };
 		1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
@@ -211,8 +209,7 @@
 				1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */,
 				1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */,
 				1BF4BFAA1F8904F40093DCE0 /* SecretPictureVController.swift */,
-				1B33FECC1F8A721600D0637F /* IntroductionOfDeveloperTVController.swift */,
-				1B33FECE1F8A7C4F00D0637F /* IntroductionOfDeveloperTVCell.swift */,
+				1BC83E0620BD579300CFBE7B /* IntroductionOfBuilderViewController.swift */,
 			);
 			name = "Setting Part";
 			sourceTree = "<group>";
@@ -374,14 +371,13 @@
 				1B10ED2B1F7369C80075DB87 /* ChoosingViewController.swift in Sources */,
 				1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */,
 				1B10ED221F6FC8570075DB87 /* RestaurantTableViewCell.swift in Sources */,
+				1BC83E0720BD579300CFBE7B /* IntroductionOfBuilderViewController.swift in Sources */,
 				1BDC90461F7A50E300E566EE /* Straight Line.swift in Sources */,
-				1B33FECD1F8A721600D0637F /* IntroductionOfDeveloperTVController.swift in Sources */,
 				1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */,
 				1B22B3531F74F94300FF3E36 /* VocabularyResultVController.swift in Sources */,
 				1BF4BF891F870B540093DCE0 /* SettingTVController.swift in Sources */,
 				1BAD97861F6E23CB005994AF /* TabBarController.swift in Sources */,
 				1BF4BFAB1F8904F40093DCE0 /* SecretPictureVController.swift in Sources */,
-				1B33FECF1F8A7C4F00D0637F /* IntroductionOfDeveloperTVCell.swift in Sources */,
 				1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */,
 				1B9973911F979CBC0026E0AE /* DetectInternet.swift in Sources */,
 				1B712F931FA9E47800EAB50B /* MapVC.swift in Sources */,

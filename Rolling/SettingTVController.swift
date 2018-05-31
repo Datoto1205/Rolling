@@ -9,6 +9,7 @@
 import UIKit
 import StoreKit
 import MessageUI
+import UserNotifications
 
 class SettingTVController: UITableViewController, MFMailComposeViewControllerDelegate {
     
@@ -23,6 +24,12 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        
+        
+        tableView.isScrollEnabled = false
+        //Prohibit user to scroll the table.
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,7 +97,29 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
     
     
     func activatePushNotification() {
-        //nil
+        let content = UNMutableNotificationContent()
+        content.title = "Did not know what should eat again?"
+        content.body = "Enter the rolling and use the magic to solve your problem immediately!"
+        content.badge = 1
+        content.sound = UNNotificationSound.default()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let request = UNNotificationRequest(identifier: "specialSwitch", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }//Activate the function of notification.
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let headerHeight : CGFloat
+        
+        if section == 0 {
+            headerHeight = 0.1
+            //Hide the header of the table.
+        } else {
+            headerHeight = 21
+        }
+        
+        return headerHeight
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -214,14 +243,14 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         mailComposeVC.mailComposeDelegate = self
         
         mailComposeVC.setToRecipients(["datototest@icloud.com"])
-        mailComposeVC.setSubject("Reporting of Problems of Rolling")
+        mailComposeVC.setSubject("Reporting")
         
         return mailComposeVC
     }
     //Set the recipient and the title of this email automatically.
     
     func showMailError() {
-        let sendMailErrorAlert = UIAlertController(title: "Could not sned the email.", message: "Oops, something was wrong, please check your internet connection once again.", preferredStyle: .alert)
+        let sendMailErrorAlert = UIAlertController(title: "Could not send the email.", message: "Oops, something was wrong, please check your internet connection once again.", preferredStyle: .alert)
         let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
         sendMailErrorAlert.addAction(dismiss)
         self.present(sendMailErrorAlert, animated: true, completion: nil) //If you conform the protocol of NSObject instead of UIViewController, you could not finish this line successfully.
