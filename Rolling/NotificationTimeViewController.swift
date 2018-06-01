@@ -15,15 +15,19 @@ class NotificationTimeViewController: UIViewController {
     
     @IBAction func timeDatePickerAction(_ sender: UIDatePicker) {
         let dateValue = DateFormatter()
-        dateValue.dateFormat = "HH:mm" // 設定要顯示在Text Field的日期時間格式
+        dateValue.dateFormat = "HH:mm"
+        dateValue.timeZone = TimeZone(secondsFromGMT: 8)
         timeLabel.text = dateValue.string(from: timeDatePickerShow.date)
+        //saveTime = timeDatePickerShow.date
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        timeDatePickerShow.timeZone = TimeZone(secondsFromGMT: 8)
+        //Define the time zone of the time showing in the datepicker.
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +35,9 @@ class NotificationTimeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillDisappear(_ animated: Bool) {
+        print(timeLabel.text!)
+    }
     /*
     // MARK: - Navigation
 
