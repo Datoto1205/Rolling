@@ -10,6 +10,7 @@ import UIKit
 import GoogleMobileAds
 import Alamofire
 import UserNotifications
+import CoreData
 
 class ChoosingViewController: UIViewController, GADBannerViewDelegate {
     
@@ -61,6 +62,8 @@ class ChoosingViewController: UIViewController, GADBannerViewDelegate {
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
         //Request user to enable the function of notification.
+        
+        CoreDataNotificationSwitch().demonstrateCoreDataOfNotificationSwitch()
     }
     
     
@@ -69,6 +72,71 @@ class ChoosingViewController: UIViewController, GADBannerViewDelegate {
         UIApplication.shared.statusBarStyle = .default
         // 在info做過變更後，在此變更status bar的顏色至黑色系(系統預設)．
         // 每次執行App時，一個頁面只會被load一次，但一個頁面可以出現/消失很多次；所以更改status bar的顏色時，要在這裡變更，而非上面的"func viewDidLoad".
+        
+        //-----<Fetch the status of notification switch (below)>-----
+        //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let Context = appDelegate.persistentContainer.viewContext
+        var checkedStatusOfNotification : Bool?
+        var initialFetchTimeOfNotification : Date?
+        let myRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SettingPage")
+        myRequest.returnsObjectsAsFaults = false
+        let myRequest2 = NSFetchRequest<NSFetchRequestResult>(entityName: "Time")
+        myRequest2.returnsObjectsAsFaults = false
+        
+        do {
+            let finalresult = try Context.fetch(myRequest)
+            for data in finalresult as! [NSManagedObject] {
+                checkedStatusOfNotification = data.value(forKey: "notification") as? Bool
+            }
+        } catch {
+            print("Could not check the status of notification.")
+        }
+        
+        do {
+            let finalresult = try Context.fetch(myRequest2)
+            for data in finalresult as! [NSManagedObject] {
+                initialFetchTimeOfNotification = data.value(forKey: "notificationtime") as? Date
+            }
+        } catch {
+            print("Could not check the existed time of notification.")
+        }
+        //-----<Fetch & Check the status of notification switch (above)>-----
+        
+        
+        
+        var calendar = Calendar.current
+        calendar.timeZone = TimeZone(secondsFromGMT: 8)!
+        if initialFetchTimeOfNotification != nil {
+            let components = calendar.dateComponents([ .hour, .minute], from: initialFetchTimeOfNotification!)
+            print(components)
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching:
+                components, repeats: true)
+            let content = UNMutableNotificationContent()
+            content.title = "Did not know what should eat again?"
+            content.body = "Enter the rolling and use the magic to solve your problem immediately!"
+            content.badge = 1
+            content.sound = UNNotificationSound.default()
+            let request = UNNotificationRequest(identifier: "specialSwitch", content: content, trigger: trigger)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            if checkedStatusOfNotification == true {
+                UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            } else {
+                print("Disable the function of notification!")
+            }
+        }
+        //Activate the function of notification if the switch was turned on.
     }
     
     

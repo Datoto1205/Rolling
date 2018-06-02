@@ -774,8 +774,8 @@ His dream is to become a richer person with the incorporation of finance and pro
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEU-OE-m76">
                                 <rect key="frame" x="0.0" y="64" width="320" height="68"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-ih-BKX">
-                                        <rect key="frame" x="139" y="24" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-ih-BKX">
+                                        <rect key="frame" x="20" y="24.5" width="280" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -783,6 +783,8 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="tHB-ih-BKX" firstAttribute="leading" secondItem="AEU-OE-m76" secondAttribute="leading" constant="20" id="6ux-YA-1oN"/>
+                                    <constraint firstAttribute="trailing" secondItem="tHB-ih-BKX" secondAttribute="trailing" constant="20" id="Owm-Ic-zXT"/>
                                     <constraint firstItem="tHB-ih-BKX" firstAttribute="centerX" secondItem="AEU-OE-m76" secondAttribute="centerX" id="XpX-xw-2By"/>
                                     <constraint firstItem="tHB-ih-BKX" firstAttribute="centerY" secondItem="AEU-OE-m76" secondAttribute="centerY" id="lC0-jn-BRp"/>
                                 </constraints>

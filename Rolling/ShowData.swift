@@ -81,4 +81,7 @@ class showData {
     let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946]
     let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865]
     let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science."]
+    
+    
+    var pushNotificationSwitchStatus : Bool = false
 }

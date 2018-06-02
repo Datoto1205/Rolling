@@ -28,6 +28,8 @@
 		1B712F951FA9ED6F00EAB50B /* PinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B712F941FA9ED6F00EAB50B /* PinData.swift */; };
 		1B7D6D7C1F9D6E180012FC8F /* SecretPhotoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */; };
 		1B7D6D7E1F9D73CB0012FC8F /* SecretPhotoExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */; };
+		1B82997820C2113A007215D1 /* CoreDataNotificationSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */; };
+		1B82997E20C217C2007215D1 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */; };
 		1B8C93851FB6EA08004B21BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8C93841FB6EA08004B21BC /* CoreLocation.framework */; };
 		1B9973911F979CBC0026E0AE /* DetectInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9973901F979CBC0026E0AE /* DetectInternet.swift */; };
 		1BAD97701F6E1408005994AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD976F1F6E1408005994AF /* AppDelegate.swift */; };
@@ -69,6 +71,8 @@
 		1B712F941FA9ED6F00EAB50B /* PinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinData.swift; sourceTree = "<group>"; };
 		1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPhotoExtension.swift; sourceTree = "<group>"; };
 		1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPhotoExtension2.swift; sourceTree = "<group>"; };
+		1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataNotificationSwitch.swift; sourceTree = "<group>"; };
+		1B82997D20C217C2007215D1 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		1B8C93841FB6EA08004B21BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1B9973901F979CBC0026E0AE /* DetectInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectInternet.swift; sourceTree = "<group>"; };
 		1BAD976C1F6E1408005994AF /* Rolling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolling.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +185,7 @@
 				1BAD97731F6E1408005994AF /* Main.storyboard */,
 				1B1EEF061F78965700D5D778 /* OtherNVController.swift */,
 				1B10ED251F6FE7770075DB87 /* ShowData.swift */,
+				1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */,
 				1BAD97851F6E23CB005994AF /* TabBarController.swift */,
 				1B9973901F979CBC0026E0AE /* DetectInternet.swift */,
 				1B257B1E20B7ADD2007FA804 /* Abandom Parts */,
@@ -191,6 +196,7 @@
 		1BAD97821F6E145A005994AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */,
 				1B9CF2BC1F8333AB0032EC54 /* Vocabularies Part */,
 				1BAD976F1F6E1408005994AF /* AppDelegate.swift */,
 				1BAD97761F6E1408005994AF /* Assets.xcassets */,
@@ -285,6 +291,7 @@
 					1BAD976B1F6E1408005994AF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = BZZMY98FBG;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -370,6 +377,7 @@
 			files = (
 				1BDC90481F7AA3F600E566EE /* TranslationVController.swift in Sources */,
 				1B10ED2D1F736B8E0075DB87 /* ChoosingNVController.swift in Sources */,
+				1B82997E20C217C2007215D1 /* CoreData.xcdatamodeld in Sources */,
 				1B7D6D7C1F9D6E180012FC8F /* SecretPhotoExtension.swift in Sources */,
 				1B10ED2B1F7369C80075DB87 /* ChoosingViewController.swift in Sources */,
 				1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */,
@@ -395,6 +403,7 @@
 				1B10ED261F6FE7770075DB87 /* ShowData.swift in Sources */,
 				1B6263EE1F8632C500B6E3E4 /* BuyingButtomAppearance.swift in Sources */,
 				1B7D6D7E1F9D73CB0012FC8F /* SecretPhotoExtension2.swift in Sources */,
+				1B82997820C2113A007215D1 /* CoreDataNotificationSwitch.swift in Sources */,
 				1BAD97701F6E1408005994AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +528,7 @@
 			baseConfigurationReference = 396C157649B73C83300861F0 /* Pods-Rolling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZZMY98FBG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,6 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Datoto.Rolling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -538,6 +549,7 @@
 			baseConfigurationReference = 3709FC7FFA862F72B166707C /* Pods-Rolling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZZMY98FBG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +586,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B82997D20C217C2007215D1 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 1B82997D20C217C2007215D1 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1BAD97641F6E1408005994AF /* Project object */;
 }

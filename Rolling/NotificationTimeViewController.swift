@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NotificationTimeViewController: UIViewController {
 
@@ -18,8 +19,31 @@ class NotificationTimeViewController: UIViewController {
         dateValue.dateFormat = "HH:mm"
         dateValue.timeZone = TimeZone(secondsFromGMT: 8)
         timeLabel.text = dateValue.string(from: timeDatePickerShow.date)
-        //saveTime = timeDatePickerShow.date
         
+        //-----<Change the time of notification user setted (below)>-----
+        //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Time"))
+        do {
+            try managedContext.execute(DelAllReqVar)
+        }
+        catch {
+            print("Could not delete the old data of notification time.")
+        }
+        
+        
+        let Entity = NSEntityDescription.entity(forEntityName: "Time", in: managedContext)
+        let newTime = NSManagedObject(entity: Entity!, insertInto: managedContext)
+        
+            newTime.setValue(timeDatePickerShow.date, forKey: "notificationtime")
+        
+        do {
+            try managedContext.save()
+        } catch {
+            print("Failed to save the new data of notification time.")
+        }
+        //-----<Change the time of notification user setted (above)>-----
     }
     
     
@@ -34,9 +58,37 @@ class NotificationTimeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
-    override func viewWillDisappear(_ animated: Bool) {
-        print(timeLabel.text!)
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //-----<Fetch the time of notification user setted (below)>-----
+        //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let Context = appDelegate.persistentContainer.viewContext
+        var initialDate : Date?
+        let myRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Time")
+        myRequest.returnsObjectsAsFaults = false
+        
+        do {
+            let finalresult = try Context.fetch(myRequest)
+            for data in finalresult as! [NSManagedObject] {
+                initialDate = data.value(forKey: "notificationtime") as! Date
+            }
+        } catch {
+            print("Could not demonstrate")
+        }
+        //-----<Fetch the time of notification user setted (above)>-----
+        
+        
+        if initialDate == nil {
+            timeDatePickerShow.date = Date()
+            timeLabel.text = "Please select a time you want to be reminded!"
+        } else {
+            timeDatePickerShow.date = initialDate!
+            timeLabel.text = "Please select a new time you want to be reminded!"
+        }
+        //So that the time datePicker would show next time could be controlled.
     }
     /*
     // MARK: - Navigation

@@ -9,7 +9,7 @@
 import UIKit
 import StoreKit
 import MessageUI
-import UserNotifications
+import CoreData
 
 class SettingTVController: UITableViewController, MFMailComposeViewControllerDelegate {
     
@@ -18,7 +18,7 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -79,7 +79,33 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         
         if (indexPath.section == 0 && indexPath.row == 1) {
             let pushNotificationSwitch = UISwitch(frame: CGRect(x: 0, y: 0, width: 100, height: 20)) as UISwitch
-            pushNotificationSwitch.isOn = false
+            
+            
+            //-----<Fetch the status of notification switch (below)>-----
+            //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
+            var initialFetchTheStatusOfNotification : Bool?
+            if initialFetchTheStatusOfNotification == nil {
+                initialFetchTheStatusOfNotification = false
+            }
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let Context = appDelegate.persistentContainer.viewContext
+            let myRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SettingPage")
+            myRequest.returnsObjectsAsFaults = false
+            
+            do {
+                let finalresult = try Context.fetch(myRequest)
+                for data in finalresult as! [NSManagedObject] {
+                    initialFetchTheStatusOfNotification = data.value(forKey: "notification") as? Bool
+                    ConductedStatusOfNotification = initialFetchTheStatusOfNotification
+                }
+            } catch {
+                print("ERROR: Could not demonstrate the status of switch of notification when loding the setting page.")
+            }
+            //-----<Fetch the status of notification switch (above)>-----
+
+            
+            pushNotificationSwitch.isOn = initialFetchTheStatusOfNotification!
             pushNotificationSwitch.isEnabled = true
             pushNotificationSwitch.isUserInteractionEnabled = true
             pushNotificationSwitch.addTarget(self, action: "activatePushNotification", for: .valueChanged );
@@ -92,18 +118,38 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
     }
     
     
+    var ConductedStatusOfNotification : Bool?
     func activatePushNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "Did not know what should eat again?"
-        content.body = "Enter the rolling and use the magic to solve your problem immediately!"
-        content.badge = 1
-        content.sound = UNNotificationSound.default()
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-        let request = UNNotificationRequest(identifier: "specialSwitch", content: content, trigger: trigger)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "SettingPage"))
         
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }//Activate the function of notification.
+        do {
+            try managedContext.execute(DelAllReqVar)
+        }
+        catch {
+            print("Could not delete the data.")
+        }
+        
+        let Entity = NSEntityDescription.entity(forEntityName: "SettingPage", in: managedContext)
+        let newTime = NSManagedObject(entity: Entity!, insertInto: managedContext)
+        
+        if ConductedStatusOfNotification == false {
+            newTime.setValue(true, forKey: "notification")
+        } else {
+            newTime.setValue(false, forKey: "notification")
+        }
+        
+        do {
+            try managedContext.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    //Change (delete and save) the status of notification switch.
+    //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
+    
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         let headerHeight : CGFloat
