@@ -1,15 +1,11 @@
-//
-//  RestaurantTableViewCell.swift
-//  Rolling
-//
-//  Created by 李政恩 on 18/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
 
 class RestaurantTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var RestaurantPicture: UIImageView!
     // Connect UI picture
     
@@ -22,7 +18,6 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var BackGroundCard: UIView!
     // Connect UI view which would show the background of that card part.
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         RestaurantPicture.layer.cornerRadius = 44
@@ -31,7 +26,7 @@ class RestaurantTableViewCell: UITableViewCell {
         // Create the round corner.
         
         BackGroundCard.backgroundColor = UIColor.white
-        contentView.backgroundColor = UIColor(colorLiteralRed: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        contentView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 1) 
         BackGroundCard.layer.cornerRadius = 3.0
         BackGroundCard.layer.masksToBounds = false
         // Set the properties of those card part.
@@ -41,13 +36,11 @@ class RestaurantTableViewCell: UITableViewCell {
         BackGroundCard.layer.shadowOffset = CGSize(width: 0, height: 0)
         BackGroundCard.layer.shadowOpacity = 0.8
         // Set some visual effect to those card part.
-        
-        }
-
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-
+    
 }

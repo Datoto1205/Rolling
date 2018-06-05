@@ -1,9 +1,5 @@
-//
-//  SettingTVController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 06/10/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
@@ -14,35 +10,33 @@ import CoreData
 class SettingTVController: UITableViewController, MFMailComposeViewControllerDelegate {
     
     var settingTitleConnection = showData()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let settingCell = tableView.dequeueReusableCell(withIdentifier: "settingCell")! as UITableViewCell
         
         
         if indexPath.section == 0 {
-        settingCell.textLabel?.text = showData().settingOption1/*[indexPath.section]*/[indexPath.row]
+            settingCell.textLabel?.text = showData().settingOption1/*[indexPath.section]*/[indexPath.row]
         } else if indexPath.section == 1 {
             settingCell.textLabel?.text = showData().settingOption2[indexPath.row]
         } else if indexPath.section == 2 {
@@ -54,7 +48,6 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         if indexPath.section != 0 && indexPath.row != 0 {
             settingCell.accessoryType = .disclosureIndicator
             // Arrow indicator
-
         } else if indexPath.section == 0 && indexPath.row == 2 {
             settingCell.accessoryType = .disclosureIndicator
             // Arrow indicator
@@ -64,17 +57,15 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         if indexPath.row == 0 {
             settingCell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 17)
             //Make the font of the texts in the first row be bold.
-            
             settingCell.isUserInteractionEnabled = false
             //Disable the first row of each section so that the user could not select it anymore.
-            
         } else if indexPath.section == 0 && indexPath.row == 1 {
             settingCell.selectionStyle = UITableViewCellSelectionStyle.none
             //If I use "isUserInteractionEnabled" instead of "UITableViewCellSelectionStyle.none", the UISwitch in the second row of the first section could not work.
         } else {
             settingCell.textLabel?.font = UIFont.systemFont(ofSize: 17)
         }
-    
+        
         
         
         if (indexPath.section == 0 && indexPath.row == 1) {
@@ -103,7 +94,7 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
                 print("ERROR: Could not demonstrate the status of switch of notification when loding the setting page.")
             }
             //-----<Fetch the status of notification switch (above)>-----
-
+            
             
             pushNotificationSwitch.isOn = initialFetchTheStatusOfNotification!
             pushNotificationSwitch.isEnabled = true
@@ -165,12 +156,10 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 3
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         if section == 0 {
             return 3
         } else if section == 1 {
@@ -182,31 +171,11 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         }
         // Customize the number of row in each section.
     }
-
+    
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        /*if tableView.indexPathForSelectedRow?.row == 0 && tableView.indexPathForSelectedRow?.section == 1 {
-            //performSegue(withIdentifier: "ShowTheSecretPicture", sender: self)
-            let SecretAlertView = UIAlertController(title: "Secret Photo", message: "This is the girl the developer of this app like, and her name is Gaga. She is really beautiful.", preferredStyle: .alert)
-            
-            let image = UIImage(named: "JJ韓.jpg")
-            SecretAlertView.addImage(image: image!)
-            // If we want to creat a alternative member, we could start a new swift file, and create "extension" in it.
-            // Insert the image content in text message part.
-            
-            let alertAction1 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {ACTION in print("done")})
-            
-            SecretAlertView.addAction(alertAction1)
-            self.present(SecretAlertView, animated: true, completion: nil)
-        } else if tableView.indexPathForSelectedRow?.row == 1 {
-            performSegue(withIdentifier: "DeveloperIntroduction", sender: self)
-        } else if tableView.indexPathForSelectedRow?.row == 2 {
-           
-        }*/
-        
-    
         if tableView.indexPathForSelectedRow?.row == 2 && tableView.indexPathForSelectedRow?.section == 0 {
             performSegue(withIdentifier: "furtherDefineTheTime", sender: self)
         } else if tableView.indexPathForSelectedRow?.row == 1 && tableView.indexPathForSelectedRow?.section == 1 {
@@ -224,52 +193,52 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
         dismiss(animated: true, completion: nil)
         // 因為在navigation controller定義navigation bar的屬性之後，無法在其他view controller改變其屬性；網友的破解法須先隱藏原本的navigation bar，並以程式新增一個新的navigation bar，但此法複雜，而且若要在navigation bar上面增加navigation item，會很麻煩．因此，我們在此使用普通的push segue和unwind segue來取代原本的想法，並達到類似的效果．
     }
-   
-
+    
+    
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
     /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
     /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
     //-----<The codes below is used to construct the function of reporting problem with email>-----
     func orderOfSendAnEmailToReportTheProblem() {

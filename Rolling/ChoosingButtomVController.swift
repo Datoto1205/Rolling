@@ -1,15 +1,12 @@
-//
-//  ChoosingButtomVController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 22/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
 class ButtonAppearance: UIButton {
+    // We use the codes in this class to set the property of that white-ring selection button in our App.
     
     @IBInspectable var cornerRadious :CGFloat = 0 {
         didSet {

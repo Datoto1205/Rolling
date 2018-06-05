@@ -1,9 +1,5 @@
-//
-//  RandomSelectionViewController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 25/05/2018.
-//  Copyright © 2018 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +13,6 @@ class RandomSelectionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Option1Text: UITextField!
     @IBOutlet weak var Option2Text: UITextField!
     @IBOutlet weak var SelectionResult: UILabel!
-    
     
     @IBAction func RandomSelectionBottom(_ sender: Any) {
         let currentDate = Date()
@@ -36,8 +31,6 @@ class RandomSelectionViewController: UIViewController, UITextFieldDelegate {
         //Select a factor from the array we created randomly.
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.Option1Text.delegate = self
@@ -51,14 +44,11 @@ class RandomSelectionViewController: UIViewController, UITextFieldDelegate {
         self.view.insertSubview(blurEffectView, at: 0)
         //Create the blurred background image.
         
-        
         let center: NotificationCenter = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardDidShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         //Detect and control the coordinate of the view.
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,14 +65,14 @@ class RandomSelectionViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         //close the keyboard when pressed somewhere else on the screen
     }
-
-//--------------------<The part below is used to move the view when the textfield is clicked!>--------------------
-//So that the user could see the whole textfields clearly.
+    
+    //-----<The part below is used to move the view when the textfield is clicked!>-----
+    // So that the user could see the whole textfields clearly.
     
     @objc func keyboardDidShow(notification: Notification) {
-        let info:NSDictionary = notification.userInfo as! NSDictionary
-        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
-        let KeyboardY = self.view.frame.size.height - keyboardSize.height
+        //let info : NSDictionary = notification.userInfo! as NSDictionary
+        //let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        //let KeyboardY = self.view.frame.size.height - keyboardSize.height
         
         if alreadyChangeTheYCoordinateOfView == false {
             UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {self.view.frame = CGRect(x: 0, y: self.view.frame.origin.y - 70, width: self.view.bounds.width, height: self.view.bounds.height)}, completion: nil)
@@ -104,16 +94,16 @@ class RandomSelectionViewController: UIViewController, UITextFieldDelegate {
     }
     //Disactivate the observers which could detect and control the coordinate of the view to save the resource.
     //Tutorial: https://www.youtube.com/watch?v=AiYCStoj0lc
-//--------------------<The part above is used to move the view when the textfield is clicked!>--------------------
-
+    //-----<The part above is used to move the view when the textfield is clicked!>-----
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

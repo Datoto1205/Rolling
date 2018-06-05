@@ -1,9 +1,5 @@
-//
-//  ResuaurantResultVController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 22/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
@@ -11,14 +7,12 @@ import UIKit
 class ResuaurantResultVController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // I need to add "UITableViewDelegate &  UITableViewDataSource" if I want to add some properties in view controller.
     
-    
     @IBAction func RestaurantResultAgain(_ sender: UIButton) {
         decisionFirst()
     }
     
     @IBOutlet weak var RestaurantResultName: UILabel!
     @IBOutlet weak var RestaurantResultImage: UIImageView!
-    
     @IBOutlet weak var kindOfMealSegmentedControlOutlet: UISegmentedControl!
     @IBOutlet weak var priceLevelOfMealSegmentedControlOutlet: UISegmentedControl!
     
@@ -61,18 +55,15 @@ class ResuaurantResultVController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
-    
-    
     var changingConnection = ChoosingNVController()
     
     func decisionFirst() {
-        
         
         let currentDate = Date()
         let currentTime = Calendar.current
         let currentSeconds = currentTime.component(.second, from: currentDate)
         let currentMinutes = currentTime.component(.minute, from: currentDate)
-        // 上面四行是取出目前的秒數和分鐘數，並加入下面的隨機亂數程式中，降低抽取到相同餐廳的機率．
+        // Fetch the current second and current minute, and we would apply it in the following codes of random selection, so that we could diversify the possibility of choosing the same restaurant.
         
         firstLoadThisPage = false
         
@@ -190,13 +181,11 @@ class ResuaurantResultVController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         RestaurantResultImage.layer.cornerRadius = 88
         RestaurantResultImage.layer.masksToBounds = true
-        // Do any additional setup after loading the view.
+        // Set the round property of the restaurant image.
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "DictionaryBackgroundPicture"))
         let blurEffect = UIBlurEffect(style: .light)
@@ -204,50 +193,36 @@ class ResuaurantResultVController: UIViewController, UITableViewDelegate, UITabl
         blurEffectView.frame = self.view.frame
         self.view.insertSubview(blurEffectView, at: 0)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         firstLoadThisPage = true
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 2
+        return 2
     }
     
-
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantConditionKind", for: indexPath)
         
         cell.textLabel?.text = showData().advancedSearchFunctionName[indexPath.row]
         cell.backgroundColor = .clear
-        cell.textLabel?.textColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 1)
-        
+        cell.textLabel?.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
-        // 以上三行可以讓在不同cell之間的seperator line有full width.
+        // Give the full width to the seperators between different tableViewCell.
         
         return cell
     }
@@ -255,13 +230,15 @@ class ResuaurantResultVController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

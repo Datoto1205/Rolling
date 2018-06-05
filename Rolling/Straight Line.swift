@@ -1,16 +1,13 @@
-//
-//  Straight Line.swift
-//  Rolling
-//
-//  Created by 李政恩 on 26/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
 
 class straightLine : UIView {
+    // We use the codes in this class to set the property of that light blue line in our App.
     
-    var color = UIColor(colorLiteralRed: 220/255, green: 235/255, blue: 244/255, alpha: 1)
+    var color = UIColor(red: 220/255, green: 235/255, blue: 244/255, alpha: 1)
     
     func straightLinePath() -> UIBezierPath {
         let start = CGPoint(x: bounds.minX + 40, y:bounds.midY)
@@ -19,7 +16,6 @@ class straightLine : UIView {
         let path = UIBezierPath()
         path.move(to: start)
         path.addLine(to: end)
-        
         path.lineWidth = CGFloat(3.0)
         
         return path

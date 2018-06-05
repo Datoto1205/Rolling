@@ -11,9 +11,9 @@ import UIKit
 class OtherNVController: UINavigationController {
 
     override func viewDidLoad() {
-        navigationBar.barTintColor = UIColor(colorLiteralRed: 65/255, green: 139/255, blue: 132/255, alpha: 1)
+        navigationBar.barTintColor = UIColor(red: 65/255, green: 139/255, blue: 132/255, alpha: 1)
         navigationBar.isTranslucent = false
-        navigationBar.tintColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        navigationBar.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         // Change the navigation bar's background color and the color of "go back" items.
         
         

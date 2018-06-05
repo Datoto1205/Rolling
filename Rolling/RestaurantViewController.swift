@@ -1,17 +1,15 @@
-//
-//  RestaurantViewController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 18/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
 import GoogleMobileAds
-var ExamineTheInternet = Reachability()
+import Alamofire
+
+var status = false
 
 class RestaurantViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, GADBannerViewDelegate {
-    // 若要在table view中顯示資料，需要在其viewController(非tableViewController)中設定使用UITableViewDelegate和UITableViewDataSource等兩個協議，並在storyBoard中連接．
+    // If I want to show a tableView in a viewController, I need to set two protocols, which included "UITableViewDelegate" and "UITableViewDataSource", and I need to connect it to the viewController in the "Main.storyboard" file. However, if I use tableViewController directly, I did not need to do this tedious procedure.
     
     @IBOutlet weak var RestaurantViewList: UITableView!
     var adBannerView : GADBannerView!
@@ -24,38 +22,32 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     let restaurantSites = showData().restaurantSitesArray
     //get the data about restaurant's name and discription from other class.
     
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantName.count
-        // 回傳矩陣內元素個數.
+        // Fetch the number of the components in the matrix.
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "specialCell", for: indexPath) as! RestaurantTableViewCell
-        // 重複使用table的prototype cell
+        // Use the prototype cell again and again.
+        // Actually, I could set different tableViewCell in different section.
         
         cell.RestaurantPicture.image = UIImage(named: (restaurantName[indexPath.row] + ".jpg"))
         cell.RestaurantName.text! = restaurantName[indexPath.row]
         cell.RestaurantDescription.text! = restaurantSites[indexPath.row]
         
-        
-        
         return (cell)
         // Show the every restaurant's picture, name and discription, and the order was depended on the array's order.
-
     }
-
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         othersIndex = (RestaurantViewList.indexPathForSelectedRow?.row)!
         performSegue(withIdentifier: "FromResuaurantToIntroduction", sender: self)
         
         tableView.deselectRow(at: indexPath, animated: true)
         // Record the index of the row user selected
     }
-
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,13 +56,13 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         adBannerView.adUnitID = "ca-app-pub-1918665180874414/3343744332"
         adBannerView.delegate = self
         adBannerView.rootViewController = self
-        if Reachability.isConnectedToNetwork() == true {
+        if Connectivity.isConnectedToInternet() {
             adBannerView.load(GADRequest())
         }
         // Create AD banner
         
         
-        //------------------(This code is necessary to immobilize the banner.)------------------
+        //-----(This code is necessary to immobilize the banner.)-----
         func adViewDidReceiveAd(_ bannerView: GADBannerView) {
             let translateTransform = CGAffineTransform(translationX: 0, y: -bannerView.bounds.size.height)
             bannerView.transform = translateTransform
@@ -80,21 +72,15 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
             }
         }
         // Fixed the Banner on the top of table view, so it wouldn't move while user scroll the table view.
-        //--------------------------------------------------------------------------------------
-
         
-        if Reachability.isConnectedToNetwork() == true {
+        if Connectivity.isConnectedToInternet() {
             status = true
         }
         // Record the status of internet.
         
-
         adViewDidReceiveAd(adBannerView)
+        //-----(This code is necessary to immobilize the banner.)-----
     }
-    
-    
-    //--------------------(This code is necessary to immobilize the banner.)--------------------
-    var status = false
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if status == true {
@@ -112,13 +98,6 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     // If user has connected to internet, the header of the tableview was shown Advertisement Banner, if user hasn't, the header of the tableview was shown nothing.
-    //------------------------------------------------------------------------------------------
-        
-
-    
-    
-    
-   
     
     
     override func didReceiveMemoryWarning() {
@@ -129,13 +108,13 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! RestaurantStatusVController
         controller.myindex = othersIndex
+        // Convey the value to different viewController.
     }
-
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     */
+    
 }

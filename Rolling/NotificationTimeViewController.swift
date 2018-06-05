@@ -1,16 +1,12 @@
-//
-//  NotificationTimeViewController.swift
-//  Rolling
-//
-//  Created by 李政恩 on 31/05/2018.
-//  Copyright © 2018 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
 class NotificationTimeViewController: UIViewController {
-
+    
     var theTimeIWantToSave : Date?
     
     @IBOutlet weak var timeLabel: UILabel!
@@ -47,18 +43,19 @@ class NotificationTimeViewController: UIViewController {
             self.navigationController?.popToRootViewController(animated: true)
             // So that the screen would go back to settingView automatically when the user clicked the button of "OK". Notice that I did not need to use unwind segue here, the fact is that I embeded navigation controller in the settingView here.
             print("done")})
-    
+        
         alertOfSaved.addAction(alertAction1)
         self.present(alertOfSaved, animated: true, completion: nil)
     }
-    
     
     @IBAction func timeDatePickerAction(_ sender: UIDatePicker) {
         let dateValue = DateFormatter()
         dateValue.dateFormat = "HH:mm"
         dateValue.timeZone = TimeZone(secondsFromGMT: 8)
+        //Define the time zone of the time you fetch.
         timeLabel.text = dateValue.string(from: timeDatePickerShow.date)
         theTimeIWantToSave = timeDatePickerShow.date
+        //Fetch the time showing on the datePicker.
     }
     
     
@@ -67,16 +64,16 @@ class NotificationTimeViewController: UIViewController {
         
         timeDatePickerShow.timeZone = TimeZone(secondsFromGMT: 8)
         //Define the time zone of the time showing in the datepicker.
-        
         saveDefineButtonAppearance .layer.cornerRadius = 40
         saveDefineButtonAppearance.layer.masksToBounds = true
+        //Set the property of round corner to the button.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -108,14 +105,15 @@ class NotificationTimeViewController: UIViewController {
         }
         //So that the time datePicker would show next time could be controlled.
     }
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -1,15 +1,13 @@
-//
-//  PinData.swift
-//  Rolling
-//
-//  Created by 李政恩 on 01/11/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import Foundation
 import MapKit
 
 class PinAnnotation : NSObject, MKAnnotation {
+    // We use the codes in this class to set the property of the pins in the Map page.
+    
     var title: String?
     var subtitle: String?
     var coordinate: CLLocationCoordinate2D

@@ -1,14 +1,11 @@
-//
-//  ShowData.swift
-//  Rolling
-//
-//  Created by 李政恩 on 18/09/2017.
-//  Copyright © 2017 Beichi Techonology. All rights reserved.
+//  Created by Li Cheng-En.
+//  Copyright © 2018. All rights reserved.
 //
 
 import Foundation
 
 class showData {
+    // I store all of the data I did not need to change here.
     
     let settingOption1 = ["Push Notification Settings", "Push Notification", "Notification time"]
     let settingOption2 = ["Support", "Help Center", "Problem Reporting"]
@@ -56,8 +53,6 @@ class showData {
         "No. 29, Guoji 1st Street, Sanxia District",
         "No. 170, Xueqin Rd, Sanxia District"]
     
-    var vocabulariesList = ["Repudiate", "Interplay", "Mainstay", "Conceptualize", "Intrinsic", "Circumvent", "Prowl", "Meager", "Primordial", "Condense", "Cling", "Perceive", "Conception", "Efficacious", "Cessation", "Rigor", "Prevalent", "Seal", "Advent", "Mediocre", "Resemble", "Arduous", "Underlie", "Ensue", "Negligible", "Grandiose", "Scheme", "Uniform", "Vacate", "Complete", "Indefinite", "Rebound", "Backdrop", "Shaft", "Foul", "Subside", "Merely", "Disruption", "Fault", "Reversing", "Blockage", "Skeptical", "Impend", "Default", "Abruptly", "Subtle", "Abrasion", "Divert", "Fringe"].sorted()
-    // sorted()可對字串做字母上的排序
     
     let vegetarianList = ["四季花開健康蔬食"]
     let spicyList = [""]
@@ -78,7 +73,4 @@ class showData {
     let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946]
     let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865]
     let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science."]
-    
-    
-    var pushNotificationSwitchStatus : Bool = false
 }

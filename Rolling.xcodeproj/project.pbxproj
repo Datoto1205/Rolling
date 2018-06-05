@@ -10,28 +10,22 @@
 		1B10ED201F6FC48E0075DB87 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED1F1F6FC48E0075DB87 /* RestaurantViewController.swift */; };
 		1B10ED221F6FC8570075DB87 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED211F6FC8570075DB87 /* RestaurantTableViewCell.swift */; };
 		1B10ED261F6FE7770075DB87 /* ShowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED251F6FE7770075DB87 /* ShowData.swift */; };
-		1B10ED291F70ACCF0075DB87 /* VocubularyTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED281F70ACCF0075DB87 /* VocubularyTVController.swift */; };
 		1B10ED2B1F7369C80075DB87 /* ChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED2A1F7369C80075DB87 /* ChoosingViewController.swift */; };
 		1B10ED2D1F736B8E0075DB87 /* ChoosingNVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B10ED2C1F736B8E0075DB87 /* ChoosingNVController.swift */; };
-		1B1EEF071F78965700D5D778 /* OtherNVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1EEF061F78965700D5D778 /* OtherNVController.swift */; };
 		1B1F61B11F94B075000CE14B /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F61B01F94B075000CE14B /* MontserratAlternates-Bold.ttf */; };
 		1B1F61B31F94B5B6000CE14B /* MontserratAlternates-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F61B21F94B5B6000CE14B /* MontserratAlternates-Light.ttf */; };
 		1B2285931F7504F900A7322D /* ChoosingButtomVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2285921F7504F900A7322D /* ChoosingButtomVController.swift */; };
 		1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */; };
-		1B22B3531F74F94300FF3E36 /* VocabularyResultVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */; };
 		1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */; };
 		1B356DB320C00A5100BBDAFA /* NotificationTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */; };
 		1B6263EE1F8632C500B6E3E4 /* BuyingButtomAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */; };
 		1B687DEC1F91CB7000AA3A11 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */; };
 		1B687DF01F93C05300AA3A11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */; };
+		1B6DBD5320C68ACE00CCEE92 /* OtherNVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBD5220C68ACD00CCEE92 /* OtherNVController.swift */; };
 		1B712F931FA9E47800EAB50B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B712F921FA9E47800EAB50B /* MapVC.swift */; };
 		1B712F951FA9ED6F00EAB50B /* PinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B712F941FA9ED6F00EAB50B /* PinData.swift */; };
-		1B7D6D7C1F9D6E180012FC8F /* SecretPhotoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */; };
-		1B7D6D7E1F9D73CB0012FC8F /* SecretPhotoExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */; };
-		1B82997820C2113A007215D1 /* CoreDataNotificationSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */; };
 		1B82997E20C217C2007215D1 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */; };
 		1B8C93851FB6EA08004B21BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8C93841FB6EA08004B21BC /* CoreLocation.framework */; };
-		1B9973911F979CBC0026E0AE /* DetectInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9973901F979CBC0026E0AE /* DetectInternet.swift */; };
 		1BAD97701F6E1408005994AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD976F1F6E1408005994AF /* AppDelegate.swift */; };
 		1BAD97751F6E1408005994AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97731F6E1408005994AF /* Main.storyboard */; };
 		1BAD97771F6E1408005994AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97761F6E1408005994AF /* Assets.xcassets */; };
@@ -43,9 +37,7 @@
 		1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */; };
 		1BDC90441F7A49BD00E566EE /* RestaurantStatusVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC90431F7A49BD00E566EE /* RestaurantStatusVController.swift */; };
 		1BDC90461F7A50E300E566EE /* Straight Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC90451F7A50E300E566EE /* Straight Line.swift */; };
-		1BDC90481F7AA3F600E566EE /* TranslationVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC90471F7AA3F600E566EE /* TranslationVController.swift */; };
 		1BF4BF891F870B540093DCE0 /* SettingTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4BF881F870B540093DCE0 /* SettingTVController.swift */; };
-		1BF4BFAB1F8904F40093DCE0 /* SecretPictureVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4BFAA1F8904F40093DCE0 /* SecretPictureVController.swift */; };
 		F0362CEF19EF39B350A54670 /* Pods_Rolling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2262FAE004A4871AD5DB7F6D /* Pods_Rolling.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,28 +45,22 @@
 		1B10ED1F1F6FC48E0075DB87 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		1B10ED211F6FC8570075DB87 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		1B10ED251F6FE7770075DB87 /* ShowData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowData.swift; sourceTree = "<group>"; };
-		1B10ED281F70ACCF0075DB87 /* VocubularyTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocubularyTVController.swift; sourceTree = "<group>"; };
 		1B10ED2A1F7369C80075DB87 /* ChoosingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosingViewController.swift; sourceTree = "<group>"; };
 		1B10ED2C1F736B8E0075DB87 /* ChoosingNVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosingNVController.swift; sourceTree = "<group>"; };
-		1B1EEF061F78965700D5D778 /* OtherNVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherNVController.swift; sourceTree = "<group>"; };
 		1B1F61B01F94B075000CE14B /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
 		1B1F61B21F94B5B6000CE14B /* MontserratAlternates-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Light.ttf"; sourceTree = "<group>"; };
 		1B2285921F7504F900A7322D /* ChoosingButtomVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosingButtomVController.swift; sourceTree = "<group>"; };
 		1B2285941F7565E800A7322D /* ResuaurantResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResuaurantResultVController.swift; sourceTree = "<group>"; };
-		1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabularyResultVController.swift; sourceTree = "<group>"; };
 		1B257B1F20B7AE3C007FA804 /* RandomSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomSelectionViewController.swift; sourceTree = "<group>"; };
 		1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeViewController.swift; sourceTree = "<group>"; };
 		1B6263ED1F8632C500B6E3E4 /* BuyingButtomAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyingButtomAppearance.swift; sourceTree = "<group>"; };
 		1B687DEB1F91CB7000AA3A11 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		1B687DEF1F93C05300AA3A11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B6DBD5220C68ACD00CCEE92 /* OtherNVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherNVController.swift; sourceTree = "<group>"; };
 		1B712F921FA9E47800EAB50B /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		1B712F941FA9ED6F00EAB50B /* PinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinData.swift; sourceTree = "<group>"; };
-		1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPhotoExtension.swift; sourceTree = "<group>"; };
-		1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPhotoExtension2.swift; sourceTree = "<group>"; };
-		1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataNotificationSwitch.swift; sourceTree = "<group>"; };
 		1B82997D20C217C2007215D1 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		1B8C93841FB6EA08004B21BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		1B9973901F979CBC0026E0AE /* DetectInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectInternet.swift; sourceTree = "<group>"; };
 		1BAD976C1F6E1408005994AF /* Rolling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAD976F1F6E1408005994AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BAD97741F6E1408005994AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,9 +74,7 @@
 		1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		1BDC90431F7A49BD00E566EE /* RestaurantStatusVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantStatusVController.swift; sourceTree = "<group>"; };
 		1BDC90451F7A50E300E566EE /* Straight Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Straight Line.swift"; sourceTree = "<group>"; };
-		1BDC90471F7AA3F600E566EE /* TranslationVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationVController.swift; sourceTree = "<group>"; };
 		1BF4BF881F870B540093DCE0 /* SettingTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTVController.swift; sourceTree = "<group>"; };
-		1BF4BFAA1F8904F40093DCE0 /* SecretPictureVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPictureVController.swift; sourceTree = "<group>"; };
 		2262FAE004A4871AD5DB7F6D /* Pods_Rolling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rolling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3709FC7FFA862F72B166707C /* Pods-Rolling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rolling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rolling/Pods-Rolling.release.xcconfig"; sourceTree = "<group>"; };
 		396C157649B73C83300861F0 /* Pods-Rolling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rolling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rolling/Pods-Rolling.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +97,6 @@
 		1B257B1E20B7ADD2007FA804 /* Abandom Parts */ = {
 			isa = PBXGroup;
 			children = (
-				1B22B3521F74F94300FF3E36 /* VocabularyResultVController.swift */,
 				1B9CF2BD1F8339410032EC54 /* Store Part */,
 			);
 			name = "Abandom Parts";
@@ -135,15 +118,6 @@
 				2262FAE004A4871AD5DB7F6D /* Pods_Rolling.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1B9CF2BC1F8333AB0032EC54 /* Vocabularies Part */ = {
-			isa = PBXGroup;
-			children = (
-				1B10ED281F70ACCF0075DB87 /* VocubularyTVController.swift */,
-				1BDC90471F7AA3F600E566EE /* TranslationVController.swift */,
-			);
-			name = "Vocabularies Part";
 			sourceTree = "<group>";
 		};
 		1B9CF2BD1F8339410032EC54 /* Store Part */ = {
@@ -183,11 +157,9 @@
 				1B712F961FA9F47D00EAB50B /* GarbageCanMap */,
 				1BAD97821F6E145A005994AF /* Supporting Files */,
 				1BAD97731F6E1408005994AF /* Main.storyboard */,
-				1B1EEF061F78965700D5D778 /* OtherNVController.swift */,
+				1B6DBD5220C68ACD00CCEE92 /* OtherNVController.swift */,
 				1B10ED251F6FE7770075DB87 /* ShowData.swift */,
-				1B82997720C2113A007215D1 /* CoreDataNotificationSwitch.swift */,
 				1BAD97851F6E23CB005994AF /* TabBarController.swift */,
-				1B9973901F979CBC0026E0AE /* DetectInternet.swift */,
 				1B257B1E20B7ADD2007FA804 /* Abandom Parts */,
 			);
 			path = Rolling;
@@ -197,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */,
-				1B9CF2BC1F8333AB0032EC54 /* Vocabularies Part */,
 				1BAD976F1F6E1408005994AF /* AppDelegate.swift */,
 				1BAD97761F6E1408005994AF /* Assets.xcassets */,
 				1BAD97781F6E1408005994AF /* LaunchScreen.storyboard */,
@@ -214,9 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				1BF4BF881F870B540093DCE0 /* SettingTVController.swift */,
-				1B7D6D7B1F9D6E180012FC8F /* SecretPhotoExtension.swift */,
-				1B7D6D7D1F9D73CB0012FC8F /* SecretPhotoExtension2.swift */,
-				1BF4BFAA1F8904F40093DCE0 /* SecretPictureVController.swift */,
 				1BC83E0620BD579300CFBE7B /* IntroductionOfBuilderViewController.swift */,
 				1B356DB220C00A5100BBDAFA /* NotificationTimeViewController.swift */,
 			);
@@ -375,35 +343,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BDC90481F7AA3F600E566EE /* TranslationVController.swift in Sources */,
 				1B10ED2D1F736B8E0075DB87 /* ChoosingNVController.swift in Sources */,
 				1B82997E20C217C2007215D1 /* CoreData.xcdatamodeld in Sources */,
-				1B7D6D7C1F9D6E180012FC8F /* SecretPhotoExtension.swift in Sources */,
 				1B10ED2B1F7369C80075DB87 /* ChoosingViewController.swift in Sources */,
 				1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */,
 				1B10ED221F6FC8570075DB87 /* RestaurantTableViewCell.swift in Sources */,
 				1BC83E0720BD579300CFBE7B /* IntroductionOfBuilderViewController.swift in Sources */,
 				1BDC90461F7A50E300E566EE /* Straight Line.swift in Sources */,
 				1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */,
-				1B22B3531F74F94300FF3E36 /* VocabularyResultVController.swift in Sources */,
 				1BF4BF891F870B540093DCE0 /* SettingTVController.swift in Sources */,
 				1BAD97861F6E23CB005994AF /* TabBarController.swift in Sources */,
-				1BF4BFAB1F8904F40093DCE0 /* SecretPictureVController.swift in Sources */,
 				1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */,
-				1B9973911F979CBC0026E0AE /* DetectInternet.swift in Sources */,
 				1B712F931FA9E47800EAB50B /* MapVC.swift in Sources */,
 				1B356DB320C00A5100BBDAFA /* NotificationTimeViewController.swift in Sources */,
 				1BD1BA291F84DB8100202961 /* AD.swift in Sources */,
 				1B2285931F7504F900A7322D /* ChoosingButtomVController.swift in Sources */,
 				1BDC90441F7A49BD00E566EE /* RestaurantStatusVController.swift in Sources */,
-				1B10ED291F70ACCF0075DB87 /* VocubularyTVController.swift in Sources */,
 				1B712F951FA9ED6F00EAB50B /* PinData.swift in Sources */,
-				1B1EEF071F78965700D5D778 /* OtherNVController.swift in Sources */,
 				1B10ED201F6FC48E0075DB87 /* RestaurantViewController.swift in Sources */,
 				1B10ED261F6FE7770075DB87 /* ShowData.swift in Sources */,
 				1B6263EE1F8632C500B6E3E4 /* BuyingButtomAppearance.swift in Sources */,
-				1B7D6D7E1F9D73CB0012FC8F /* SecretPhotoExtension2.swift in Sources */,
-				1B82997820C2113A007215D1 /* CoreDataNotificationSwitch.swift in Sources */,
+				1B6DBD5320C68ACE00CCEE92 /* OtherNVController.swift in Sources */,
 				1BAD97701F6E1408005994AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
