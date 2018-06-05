@@ -11,15 +11,13 @@ import CoreData
 
 class NotificationTimeViewController: UIViewController {
 
+    var theTimeIWantToSave : Date?
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timeDatePickerShow: UIDatePicker!
+    @IBOutlet weak var saveDefineButtonAppearance: UIButton!
     
-    @IBAction func timeDatePickerAction(_ sender: UIDatePicker) {
-        let dateValue = DateFormatter()
-        dateValue.dateFormat = "HH:mm"
-        dateValue.timeZone = TimeZone(secondsFromGMT: 8)
-        timeLabel.text = dateValue.string(from: timeDatePickerShow.date)
-        
+    @IBAction func saveDefineButton(_ sender: UIButton) {
         //-----<Change the time of notification user setted (below)>-----
         //It seems that I could not do it successfully when I tried to done it in another class, so I did it here, while the codes is a little bit tedious.
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -32,11 +30,10 @@ class NotificationTimeViewController: UIViewController {
             print("Could not delete the old data of notification time.")
         }
         
-        
         let Entity = NSEntityDescription.entity(forEntityName: "Time", in: managedContext)
         let newTime = NSManagedObject(entity: Entity!, insertInto: managedContext)
         
-            newTime.setValue(timeDatePickerShow.date, forKey: "notificationtime")
+        newTime.setValue(theTimeIWantToSave, forKey: "notificationtime")
         
         do {
             try managedContext.save()
@@ -44,6 +41,24 @@ class NotificationTimeViewController: UIViewController {
             print("Failed to save the new data of notification time.")
         }
         //-----<Change the time of notification user setted (above)>-----
+        
+        let alertOfSaved = UIAlertController(title: "Finished", message: "The time of setting of notification was changed!.", preferredStyle: .alert)
+        let alertAction1 = UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: {(ACTION) in
+            self.navigationController?.popToRootViewController(animated: true)
+            // So that the screen would go back to settingView automatically when the user clicked the button of "OK". Notice that I did not need to use unwind segue here, the fact is that I embeded navigation controller in the settingView here.
+            print("done")})
+    
+        alertOfSaved.addAction(alertAction1)
+        self.present(alertOfSaved, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func timeDatePickerAction(_ sender: UIDatePicker) {
+        let dateValue = DateFormatter()
+        dateValue.dateFormat = "HH:mm"
+        dateValue.timeZone = TimeZone(secondsFromGMT: 8)
+        timeLabel.text = dateValue.string(from: timeDatePickerShow.date)
+        theTimeIWantToSave = timeDatePickerShow.date
     }
     
     
@@ -52,6 +67,9 @@ class NotificationTimeViewController: UIViewController {
         
         timeDatePickerShow.timeZone = TimeZone(secondsFromGMT: 8)
         //Define the time zone of the time showing in the datepicker.
+        
+        saveDefineButtonAppearance .layer.cornerRadius = 40
+        saveDefineButtonAppearance.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +91,7 @@ class NotificationTimeViewController: UIViewController {
         do {
             let finalresult = try Context.fetch(myRequest)
             for data in finalresult as! [NSManagedObject] {
-                initialDate = data.value(forKey: "notificationtime") as! Date
+                initialDate = data.value(forKey: "notificationtime") as? Date
             }
         } catch {
             print("Could not demonstrate")

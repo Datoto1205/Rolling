@@ -35,10 +35,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0yX-OH-zBi" secondAttribute="trailing" id="50y-Lw-LJE"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0yX-OH-zBi" secondAttribute="bottom" id="6OH-7G-1ZC"/>
                             <constraint firstItem="0yX-OH-zBi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Hld-AC-kDB"/>
                             <constraint firstItem="lgZ-Nv-Qur" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Vji-di-Zlt"/>
                             <constraint firstItem="0yX-OH-zBi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="f6O-bp-jDm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0yX-OH-zBi" secondAttribute="bottom" id="lB8-X3-gKE"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lgZ-Nv-Qur" secondAttribute="bottom" constant="20" id="wiG-hI-wyi"/>
                             <constraint firstItem="lgZ-Nv-Qur" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="zMF-xl-9Up"/>
                         </constraints>

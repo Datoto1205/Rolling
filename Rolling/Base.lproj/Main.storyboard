@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Efx-Hx-7DV">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,7 +25,7 @@
                 <navigationController id="6wy-Bq-A54" customClass="ChoosingNVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Random Decision" image="TabBarButtom-無作為抽出" id="n8a-Yt-KKh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wbI-60-v8u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -44,25 +44,25 @@
                         <viewControllerLayoutGuide type="top" id="AeG-5B-Q5i"/>
                         <viewControllerLayoutGuide type="bottom" id="NFe-fQ-DZg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4wa-vC-SqC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <view key="view" contentMode="scaleAspectFill" id="4wa-vC-SqC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xke-PY-RDb" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="381" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="670.33333333333337" width="375" height="58.666666666666629"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xke-PY-RDb" secondAttribute="height" multiplier="32:5" id="Ygs-tY-9zA"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dGG-1D-ohb">
-                                <rect key="frame" x="39" y="42" width="242" height="336"/>
+                                <rect key="frame" x="39" y="181" width="297" height="390"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-DC-dGi">
-                                        <rect key="frame" x="0.0" y="0.0" width="242" height="146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="177.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rolling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-n2-3Hm">
-                                                <rect key="frame" x="0.0" y="0.0" width="242" height="61"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297" height="75.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nJk-n2-3Hm" secondAttribute="height" multiplier="288:73" id="m8O-EX-WqL"/>
                                                 </constraints>
@@ -71,7 +71,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save your time, and make better decision!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNI-rx-9lU">
-                                                <rect key="frame" x="0.0" y="71" width="242" height="75"/>
+                                                <rect key="frame" x="0.0" y="85.333333333333314" width="297" height="92"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iNI-rx-9lU" secondAttribute="height" multiplier="242:75" id="VXd-vW-5fO"/>
                                                 </constraints>
@@ -82,14 +82,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-s8-TAB">
-                                        <rect key="frame" x="0.0" y="206" width="242" height="130"/>
+                                        <rect key="frame" x="0.0" y="237.33333333333331" width="297" height="152.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-Qt-snT" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="242" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297" height="61.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="p3W-Qt-snT" secondAttribute="height" multiplier="121:25" id="Mt9-cI-waV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <state key="normal" title="Random Restaurant">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -101,7 +101,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="CustomizeBorderWidth">
-                                                        <real key="value" value="2"/>
+                                                        <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -109,11 +109,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fM-iC-iN2" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="80" width="242" height="50"/>
+                                                <rect key="frame" x="0.0" y="91.333333333333371" width="297" height="61.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8fM-iC-iN2" secondAttribute="height" multiplier="121:25" id="Rda-GL-Rme"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <state key="normal" title="Random Selection">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -125,7 +125,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="CustomizeBorderWidth">
-                                                        <real key="value" value="2"/>
+                                                        <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -176,25 +176,25 @@
                         <viewControllerLayoutGuide type="bottom" id="QxQ-iR-M2h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w5T-9S-LgU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtq-3V-gUb">
-                                <rect key="frame" x="0.0" y="64" width="320" height="166"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="308"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVr-NU-qyh">
-                                <rect key="frame" x="0.0" y="230" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="396" width="375" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="ueg-8U-zvN"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aMC-RJ-r6r">
-                                <rect key="frame" x="126" y="250" width="168" height="80"/>
+                                <rect key="frame" x="126" y="416" width="223" height="80"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FAO-bF-FeU">
-                                        <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="30"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KUG-Ze-ur1"/>
@@ -204,7 +204,7 @@
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Apn-Y0-F0r">
-                                        <rect key="frame" x="0.0" y="50" width="168" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="223" height="30"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Dup-pc-QGu"/>
@@ -216,7 +216,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type the delima you confront!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeq-Hv-b24">
-                                <rect key="frame" x="0.0" y="122.5" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="217.66666666666666" width="375" height="49.999999999999972"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iLt-dy-adY"/>
                                 </constraints>
@@ -225,7 +225,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-iy-Xrz" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="120" y="375" width="80" height="80"/>
+                                <rect key="frame" x="147.66666666666666" y="541" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="58V-8j-ieF"/>
                                     <constraint firstAttribute="width" constant="80" id="w5A-ME-BZ0"/>
@@ -252,7 +252,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-Ml-Uti">
-                                <rect key="frame" x="26" y="250" width="80" height="80"/>
+                                <rect key="frame" x="26" y="416" width="80" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-LQ-LV6">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
@@ -314,15 +314,15 @@
             <objects>
                 <tableViewController modalTransitionStyle="crossDissolve" id="xsM-Mt-dHc" customClass="SettingTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ppm-yj-tVr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" id="iBO-Sv-tML">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iBO-Sv-tML" id="4oo-3M-Ug2">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -361,17 +361,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2SX-25-QMs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fwd-2t-R0t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-yb-YkZ">
-                                <rect key="frame" x="35" y="145" width="250" height="190"/>
+                                <rect key="frame" x="35" y="290" width="305" height="232"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JJ韓" translatesAutoresizingMaskIntoConstraints="NO" id="6t9-HO-H7k">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="183.33333333333334"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-cF-Kqs" customClass="BuyingButtomAppearance" customModule="Rolling" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="150" width="250" height="40"/>
+                                        <rect key="frame" x="0.0" y="183.33333333333331" width="305" height="48.666666666666657"/>
                                         <color key="backgroundColor" red="0.88235294117647056" green="0.97254901960784312" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="6id-cF-Kqs" secondAttribute="height" multiplier="25:4" id="D6N-10-rax"/>
@@ -426,25 +426,25 @@
             <objects>
                 <tableViewController id="DQr-yj-cVg" customClass="IntroductionOfDeveloperTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="176" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xdd-ae-JLo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eachPart" rowHeight="176" id="doc-m9-ts8" customClass="IntroductionOfDeveloperTVCell" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="176"/>
+                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="176"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="doc-m9-ts8" id="ZKM-LB-Iqq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="175.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="175.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EachTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-q1-4qZ">
-                                            <rect key="frame" x="26" y="11" width="268" height="24"/>
+                                            <rect key="frame" x="26" y="11" width="323" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EachContent" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-V2-0ll">
-                                            <rect key="frame" x="26" y="40" width="268" height="114"/>
+                                            <rect key="frame" x="26" y="40" width="323" height="137.33333333333334"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="bAM-V2-0ll" secondAttribute="height" multiplier="284:121" id="73L-2h-gLF"/>
                                             </constraints>
@@ -479,7 +479,7 @@
             </objects>
             <point key="canvasLocation" x="7125" y="-596"/>
         </scene>
-        <!--Introduction Of Builder View Controller-->
+        <!--Developer-->
         <scene sceneID="xe2-lk-8Cm">
             <objects>
                 <viewController id="K19-mc-DYT" customClass="IntroductionOfBuilderViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
@@ -492,13 +492,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-ft-Ug1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="651"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piS-pU-rPb">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zU-Ev-8Uy">
-                                                <rect key="frame" x="20" y="303" width="280" height="385.5"/>
+                                                <rect key="frame" x="20" y="303" width="280" height="385.66666666666674"/>
                                                 <string key="text">The developer of this App is a taiwanese programming novice. He graduated from NTPU in 2017, so he own some experiences about the restaurant near NTPU. 
 
 While he was an graduate student in NTPU, he reckon that he had difficulties to choose the food he wanted to eat, because he have stayed in this area for four years, and he was weary of the same food list. He hoped that he could use program to solve this problem. 
@@ -509,7 +509,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Li Cheng-En" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-GD-tTu">
-                                                <rect key="frame" x="96.5" y="256" width="127" height="27"/>
+                                                <rect key="frame" x="96.666666666666686" y="256" width="127" height="27"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -553,6 +553,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                             <constraint firstAttribute="trailing" secondItem="KuE-ft-Ug1" secondAttribute="trailing" id="vty-td-dKZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Developer" id="6nw-Pw-8ii"/>
                     <size key="freeformSize" width="320" height="700"/>
                     <connections>
                         <outlet property="photo" destination="EdC-wB-CdM" id="s9F-AG-The"/>
@@ -562,7 +563,7 @@ His dream is to become a richer person with the incorporation of finance and pro
             </objects>
             <point key="canvasLocation" x="4558" y="14"/>
         </scene>
-        <!--View Controller-->
+        <!--Help Center-->
         <scene sceneID="XeA-eh-SPT">
             <objects>
                 <viewController id="zY8-ZM-yQ8" sceneMemberID="viewController">
@@ -575,18 +576,18 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-rm-eU2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1751"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1717"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-fu-5V9">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e2-fM-7Pw">
-                                                <rect key="frame" x="121" y="185" width="78" height="26.5"/>
+                                                <rect key="frame" x="121" y="185" width="78" height="26.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpB-Wx-jMh">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help Center Photo 1" translatesAutoresizingMaskIntoConstraints="NO" id="cpB-Wx-jMh">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <constraints>
@@ -594,12 +595,12 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An App to help you make decision." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-vn-zjd">
-                                                <rect key="frame" x="10" y="231.5" width="300" height="21"/>
+                                                <rect key="frame" x="10" y="231.66666666666666" width="300" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-9U-o2V">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help Center Photo 2" translatesAutoresizingMaskIntoConstraints="NO" id="bKe-9U-o2V">
                                                 <rect key="frame" x="0.0" y="272" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <constraints>
@@ -607,69 +608,69 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-Xd-Yie">
-                                                <rect key="frame" x="20" y="452" width="280" height="142.5"/>
+                                                <rect key="frame" x="20" y="451.99999999999994" width="280" height="142.33333333333331"/>
                                                 <string key="text">In the "Random Decision" page, after you clicked the buttom, you not only could decide the restaurants in which you want to have your meal more easily, but you could gain a satisfying solution when you stayed in a delima.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="loR-UF-Gsh">
-                                                <rect key="frame" x="0.0" y="614.5" width="320" height="160"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help Center Photo 3" translatesAutoresizingMaskIntoConstraints="NO" id="loR-UF-Gsh">
+                                                <rect key="frame" x="0.0" y="614.33333333333337" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="loR-UF-Gsh" secondAttribute="height" multiplier="2:1" id="vW3-cm-XTH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-TY-2CA">
-                                                <rect key="frame" x="20" y="794.5" width="280" height="142.5"/>
+                                                <rect key="frame" x="20" y="794.33333333333337" width="280" height="142.33333333333337"/>
                                                 <string key="text">In the "Restaurant" page, you could scan the list of all of the restaurants around the campus of National Taipei University. You even could further see the property of each restaurant, such as the price and the time we recommend you to visit.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkt-TL-JAD">
-                                                <rect key="frame" x="0.0" y="956.5" width="320" height="160"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help Center Photo 4" translatesAutoresizingMaskIntoConstraints="NO" id="rkt-TL-JAD">
+                                                <rect key="frame" x="0.0" y="956.33333333333348" width="320" height="160"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the &quot;Garbage Can&quot; page, you could scan all of the public garbage cans on the campus of National Taipei University. " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOI-hv-Arv">
-                                                <rect key="frame" x="20" y="1136.5" width="280" height="81.5"/>
+                                                <rect key="frame" x="20" y="1136.3333333333333" width="280" height="81.333333333333258"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequent Asked Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3b-kj-XEc">
-                                                <rect key="frame" x="24" y="1283" width="273" height="26.5"/>
+                                                <rect key="frame" x="24" y="1282.6666666666667" width="273" height="26.333333333333258"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiN-je-taI" customClass="straightLine" customModule="Rolling" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="1238" width="320" height="15"/>
+                                                <rect key="frame" x="0.0" y="1237.6666666666667" width="320" height="15"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="sqw-H3-iJE"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1: Why could not I use the function of “Random Restaurant” without the connection of internet?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-Wn-7fF">
-                                                <rect key="frame" x="10" y="1339.5" width="300" height="61"/>
+                                                <rect key="frame" x="10" y="1339" width="300" height="61"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.090196080509999998" green="0.30196079609999998" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A1: Because we have some technique problems, so please connect to the internet when you use this function now." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYk-FW-FcW">
-                                                <rect key="frame" x="10" y="1415.5" width="300" height="81.5"/>
+                                                <rect key="frame" x="10" y="1415" width="300" height="81.333333333333258"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q2: Why could not I report the problem in the App Store?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9t-62-Ggb">
-                                                <rect key="frame" x="10" y="1527" width="300" height="41"/>
+                                                <rect key="frame" x="10" y="1526.3333333333333" width="300" height="40.666666666666742"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.090196080509999998" green="0.30196079609999998" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzy-ax-NHY">
-                                                <rect key="frame" x="10" y="1583" width="300" height="101.5"/>
+                                                <rect key="frame" x="10" y="1582" width="300" height="101.66666666666674"/>
                                                 <string key="text">A2: Because we have not release this App in the App Store yet, so if you found some problems or bugs, please inform us with email until we decide to upload our App to the official store.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -743,6 +744,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                             <constraint firstItem="tQf-tF-KkN" firstAttribute="top" secondItem="Lj8-rm-eU2" secondAttribute="bottom" id="ool-8D-Df5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Help Center" id="n6m-tr-kdT"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1800"/>
                 </viewController>
@@ -750,7 +752,7 @@ His dream is to become a richer person with the incorporation of finance and pro
             </objects>
             <point key="canvasLocation" x="3765" y="1281"/>
         </scene>
-        <!--Notification Time View Controller-->
+        <!--Notification Time-->
         <scene sceneID="ATQ-bv-b1m">
             <objects>
                 <viewController id="YTC-B1-tY4" customClass="NotificationTimeViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
@@ -759,11 +761,11 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="hbl-iS-aOP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2dR-nO-GVN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-OF-pj3">
-                                <rect key="frame" x="0.0" y="132" width="320" height="216"/>
+                                <rect key="frame" x="27.666666666666657" y="298" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="549456418.44724202">
                                     <!--2018-05-31 10:46:58 +0000-->
                                 </date>
@@ -772,10 +774,10 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </connections>
                             </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEU-OE-m76">
-                                <rect key="frame" x="0.0" y="64" width="320" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="210"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-ih-BKX">
-                                        <rect key="frame" x="20" y="24.5" width="280" height="20.5"/>
+                                        <rect key="frame" x="20" y="95.666666666666657" width="335" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -789,23 +791,44 @@ His dream is to become a richer person with the incorporation of finance and pro
                                     <constraint firstItem="tHB-ih-BKX" firstAttribute="centerY" secondItem="AEU-OE-m76" secondAttribute="centerY" id="lC0-jn-BRp"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-RQ-eiH">
+                                <rect key="frame" x="147.66666666666666" y="539" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.73346000909805298" green="0.83137005567550659" blue="0.79214709997177124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0qp-Fp-rb3"/>
+                                    <constraint firstAttribute="width" constant="80" id="CBj-gZ-64X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveDefineButton:" destination="YTC-B1-tY4" eventType="touchUpInside" id="zdg-bh-Lbb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AEU-OE-m76" firstAttribute="leading" secondItem="2dR-nO-GVN" secondAttribute="leading" id="6T3-pe-1Tn"/>
                             <constraint firstItem="AEU-OE-m76" firstAttribute="top" secondItem="3zw-eg-RCJ" secondAttribute="bottom" id="B3V-s9-eAC"/>
                             <constraint firstAttribute="trailing" secondItem="AEU-OE-m76" secondAttribute="trailing" id="Y91-rt-Q0p"/>
+                            <constraint firstItem="dOe-RQ-eiH" firstAttribute="top" secondItem="pSW-OF-pj3" secondAttribute="bottom" constant="25" id="bfx-dc-DPy"/>
+                            <constraint firstItem="dOe-RQ-eiH" firstAttribute="centerX" secondItem="2dR-nO-GVN" secondAttribute="centerX" id="cJJ-yW-Que"/>
                             <constraint firstItem="pSW-OF-pj3" firstAttribute="centerX" secondItem="2dR-nO-GVN" secondAttribute="centerX" id="iqM-ZA-Sdb"/>
                             <constraint firstItem="pSW-OF-pj3" firstAttribute="top" secondItem="AEU-OE-m76" secondAttribute="bottom" id="uNm-sR-hJz"/>
                             <constraint firstItem="pSW-OF-pj3" firstAttribute="centerY" secondItem="2dR-nO-GVN" secondAttribute="centerY" id="xS9-vR-M46"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Notification Time" id="dor-8x-WOK"/>
                     <connections>
+                        <outlet property="saveDefineButtonAppearance" destination="dOe-RQ-eiH" id="Meg-mt-KLz"/>
                         <outlet property="timeDatePickerShow" destination="pSW-OF-pj3" id="qUv-LT-UNB"/>
                         <outlet property="timeLabel" destination="tHB-ih-BKX" id="MJg-1D-KbH"/>
+                        <segue destination="naB-xa-A3S" kind="unwind" identifier="backToSettingView" unwindAction="unwindToViewControllerWithSegue:" id="xhd-b5-oKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg4-5j-Vzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="naB-xa-A3S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4556.25" y="865"/>
         </scene>
@@ -818,27 +841,27 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="9OJ-cC-iAh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rEi-II-QDp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Wy-10d">
-                                <rect key="frame" x="110" y="431" width="100" height="0.0"/>
+                                <rect key="frame" x="137.66666666666666" y="273" width="100" height="456"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="yN1-Im-fWp"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gIC-Fm-xf6">
-                                <rect key="frame" x="8" y="64" width="304" height="184"/>
+                                <rect key="frame" x="8" y="88" width="359" height="230"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DefaultRestaurantPicture" translatesAutoresizingMaskIntoConstraints="NO" id="McE-C9-zWU">
-                                        <rect key="frame" x="64" y="0.0" width="176" height="154"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultRestaurantPicture" translatesAutoresizingMaskIntoConstraints="NO" id="McE-C9-zWU">
+                                        <rect key="frame" x="91.666666666666686" y="0.0" width="176" height="176"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="176" id="gQi-BS-jkW"/>
                                             <constraint firstAttribute="height" constant="176" id="lIB-7Y-KrW"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please click the &quot;Again&quot; buttom below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PWd-V5-Cgc">
-                                        <rect key="frame" x="0.0" y="184" width="304" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please click the &quot;Again&quot; buttom below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PWd-V5-Cgc">
+                                        <rect key="frame" x="0.0" y="206" width="359" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -846,7 +869,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGZ-dF-ieJ" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="120" y="391" width="80" height="80"/>
+                                <rect key="frame" x="147.66666666666666" y="461" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="RWG-pG-0Tw"/>
                                     <constraint firstAttribute="height" constant="80" id="hEQ-Ll-AHl"/>
@@ -872,26 +895,26 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </connections>
                             </button>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-aE-vME">
-                                <rect key="frame" x="0.0" y="258" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="328" width="375" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="WPS-4m-9s8"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-4W-d7D">
-                                <rect key="frame" x="18.5" y="263" width="283.5" height="107"/>
+                                <rect key="frame" x="46" y="333" width="283.33333333333331" height="107"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-bU-716">
-                                        <rect key="frame" x="0.0" y="0.0" width="283.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="283.33333333333331" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced Search Option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-nr-k7H">
-                                                <rect key="frame" x="0.0" y="0.0" width="194.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="194.33333333333334" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wXl-na-sh1">
-                                                <rect key="frame" x="234.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="advancedSearchOptionSwitch:" destination="5MA-5t-f0t" eventType="valueChanged" id="SA4-3r-LCT"/>
                                                 </connections>
@@ -899,7 +922,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </subviews>
                                     </stackView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kAz-WN-Mky">
-                                        <rect key="frame" x="0.0" y="41" width="283.5" height="29"/>
+                                        <rect key="frame" x="0.0" y="41" width="283.33333333333331" height="29"/>
                                         <segments>
                                             <segment title="Breakfast"/>
                                             <segment title="Lunch"/>
@@ -911,7 +934,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </connections>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h58-s0-McY">
-                                        <rect key="frame" x="0.0" y="79" width="283.5" height="29"/>
+                                        <rect key="frame" x="0.0" y="79" width="283.33333333333331" height="29"/>
                                         <segments>
                                             <segment title="Cheap"/>
                                             <segment title="Medium"/>
@@ -962,18 +985,18 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="gjM-A7-4Xb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2eo-jQ-vI6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-Ub-5db">
-                                <rect key="frame" x="65" y="140" width="192" height="124"/>
+                                <rect key="frame" x="65" y="164" width="247" height="124"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgF-r3-Suu" customClass="ButtonAppearance" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="120" y="344" width="80" height="80"/>
+                                <rect key="frame" x="147.66666666666666" y="368" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="7nh-kJ-oLK"/>
                                     <constraint firstAttribute="width" constant="80" id="awC-Hm-DD2"/>
@@ -999,7 +1022,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ4-S9-D3E">
-                                <rect key="frame" x="134.5" y="190" width="52" height="24"/>
+                                <rect key="frame" x="162" y="214" width="52" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1035,11 +1058,11 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="Syf-z2-xYN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="196-KG-HJu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-yH-a5z">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Item" id="1d7-75-nQk"/>
                                 </items>
@@ -1053,19 +1076,19 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ud-Gr-lN8">
-                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="specialCell" rowHeight="132" id="bqB-Rh-BEh" customClass="RestaurantTableViewCell" customModule="Rolling" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="132"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bqB-Rh-BEh" id="opX-bV-h6S">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="131.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8O-KJ-s9l">
-                                                    <rect key="frame" x="8" y="8" width="304" height="115"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="115"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-v6-uin">
                                                             <rect key="frame" x="8" y="13" width="88" height="88"/>
@@ -1080,7 +1103,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RestaurantDescription" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-Ho-BNm">
-                                                            <rect key="frame" x="111" y="53" width="167" height="48"/>
+                                                            <rect key="frame" x="111" y="53" width="222" height="48"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="48" id="u8O-Wz-ro7"/>
                                                             </constraints>
@@ -1089,7 +1112,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJf-nu-InX">
-                                                            <rect key="frame" x="286" y="47" width="11" height="21"/>
+                                                            <rect key="frame" x="341" y="47" width="11" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="11" id="bct-2O-t06"/>
                                                             </constraints>
@@ -1167,28 +1190,28 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="kOc-PJ-Jub"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pem-68-emc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flf-5X-yjC" customClass="straightLine" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="232" width="320" height="16"/>
+                                <rect key="frame" x="0.0" y="398" width="375" height="16"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="CkG-yh-ObT"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="introductionName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0a-SX-Rnh">
-                                <rect key="frame" x="16" y="200" width="288" height="24"/>
+                                <rect key="frame" x="16" y="366" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-wc-liA">
-                                <rect key="frame" x="0.0" y="64" width="320" height="116"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="258"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="introductionDescription" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZN-dN-hu4">
-                                <rect key="frame" x="40" y="256" width="240" height="45"/>
+                                <rect key="frame" x="40" y="422" width="295" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6Kq-Xj-Pcd"/>
                                 </constraints>
@@ -1197,25 +1220,25 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-Rh-yzW">
-                                <rect key="frame" x="41" y="316" width="238" height="100"/>
+                                <rect key="frame" x="41" y="482" width="293" height="232"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VBH-KH-O2y">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="70.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-d8-XCI">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215686274503" green="0.59215686274509804" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-zu-14E">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="26.5"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rK-tD-MIM">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="26.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1223,22 +1246,22 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-0Q-h1k">
-                                        <rect key="frame" x="0.0" y="36.5" width="238" height="27"/>
+                                        <rect key="frame" x="0.0" y="80.666666666666629" width="293" height="70.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUo-DL-D0h">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="27"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJx-3y-yog">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="27"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJs-3U-PAn">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="27"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1246,22 +1269,22 @@ His dream is to become a richer person with the incorporation of finance and pro
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nn4-Bf-826">
-                                        <rect key="frame" x="0.0" y="73.5" width="238" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="161.33333333333337" width="293" height="70.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetarian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph3-ob-mC8">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spicy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZf-I8-bCE">
-                                                <rect key="frame" x="82.5" y="0.0" width="73" height="26.5"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Rice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7H0-Cd-BlN">
-                                                <rect key="frame" x="165.5" y="0.0" width="72.5" height="26.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="70.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.58039215690000001" green="0.59215686270000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1323,27 +1346,27 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="VTT-pf-jTa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c9z-aj-fYO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="slides" translatesAutoresizingMaskIntoConstraints="NO" id="htq-tP-x2L">
-                                <rect key="frame" x="0.0" y="64" width="320" height="140"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="htq-tP-x2L" secondAttribute="height" multiplier="16:7" id="GoJ-7y-Tjf"/>
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-sm-owQ">
-                                <rect key="frame" x="16" y="244" width="288" height="226"/>
+                                <rect key="frame" x="16" y="292" width="343" height="476"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Pirture of Product 1" translatesAutoresizingMaskIntoConstraints="NO" id="iwH-Fh-jcl">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="233"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.4823529412" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iwH-Fh-jcl" secondAttribute="height" multiplier="72:31" id="wHW-0u-PCo"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background photo of product 2" translatesAutoresizingMaskIntoConstraints="NO" id="NO6-v7-tgz">
-                                        <rect key="frame" x="0.0" y="118" width="288" height="108"/>
+                                        <rect key="frame" x="0.0" y="243" width="343" height="233"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.4823529412" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="NO6-v7-tgz" secondAttribute="height" multiplier="288:131" id="e2e-Xv-s3w"/>
@@ -1352,11 +1375,11 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-36-5te">
-                                <rect key="frame" x="140.5" y="164" width="39" height="37"/>
+                                <rect key="frame" x="168" y="212" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FST-1n-XC7">
-                                <rect key="frame" x="35" y="248" width="250" height="100"/>
+                                <rect key="frame" x="62.666666666666657" y="358.66666666666669" width="249.99999999999997" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eleminate the Advertisement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkH-2J-Kbx">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -1408,7 +1431,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-UR-iQ2">
-                                <rect key="frame" x="35" y="366" width="250" height="100"/>
+                                <rect key="frame" x="62.666666666666657" y="601.66666666666663" width="249.99999999999997" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ0-Be-E6Y">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -1460,7 +1483,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH5-YR-Y8J">
-                                <rect key="frame" x="16" y="209" width="64.5" height="30"/>
+                                <rect key="frame" x="16" y="257" width="64.333333333333329" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1520,16 +1543,16 @@ His dream is to become a richer person with the incorporation of finance and pro
             <objects>
                 <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="8ff-Fy-Hif" customClass="VocubularyTVController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jin-SR-Ty5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ihy-CY-EyA">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihy-CY-EyA" id="JF8-ql-hGl">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1565,11 +1588,11 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="dRf-SV-LXB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nyj-YN-MK0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SelectedVocabulary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaE-HN-AuL">
-                                <rect key="frame" x="16" y="84" width="288" height="44"/>
+                                <rect key="frame" x="16" y="108" width="343" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="D4I-5u-PJx"/>
                                 </constraints>
@@ -1578,10 +1601,10 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2t-aE-mO7">
-                                <rect key="frame" x="0.0" y="148" width="320" height="300"/>
+                                <rect key="frame" x="0.0" y="172" width="375" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービスを提供できません" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT2-Gt-ks4">
-                                        <rect key="frame" x="56" y="89" width="209" height="122"/>
+                                        <rect key="frame" x="83.666666666666686" y="89" width="209" height="122"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="209" id="66Z-3l-0bI"/>
                                             <constraint firstAttribute="height" constant="122" id="HRh-ec-QPA"/>
@@ -1599,7 +1622,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vocabularySearchTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xH-wM-CJD">
-                                <rect key="frame" x="16" y="473" width="288" height="35"/>
+                                <rect key="frame" x="16" y="497" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="p8d-La-Zjd"/>
                                 </constraints>
@@ -1640,7 +1663,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E9e-WK-hdX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1660,7 +1683,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3kN-yn-KiY">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1680,7 +1703,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gn0-IO-rLO">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1701,14 +1724,14 @@ His dream is to become a richer person with the incorporation of finance and pro
                         <viewControllerLayoutGuide type="bottom" id="5MM-vj-8Tz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AFx-vf-B2b">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uba-7Z-TW4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnm-ED-fE3" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="381" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="670.33333333333337" width="375" height="58.666666666666629"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qnm-ED-fE3" secondAttribute="height" multiplier="32:5" id="dco-Dk-u8i"/>
@@ -1726,7 +1749,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                             <constraint firstItem="5MM-vj-8Tz" firstAttribute="top" secondItem="qnm-ED-fE3" secondAttribute="bottom" id="hEr-E7-Oyq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Garbage Can" id="H2t-pK-XuJ"/>
+                    <tabBarItem key="tabBarItem" title="Garbage Can" image="TabBarButton- Garbage Can" id="H2t-pK-XuJ"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
                         <outlet property="BannerAD" destination="qnm-ED-fE3" id="jPK-BC-TF1"/>
@@ -1744,7 +1767,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="gjv-R5-Twv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pXp-0R-orL">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1761,13 +1784,18 @@ His dream is to become a richer person with the incorporation of finance and pro
         <image name="Background Pirture of Product 1" width="973" height="468"/>
         <image name="Background photo of product 2" width="973" height="468"/>
         <image name="DefaultRestaurantPicture" width="176" height="176"/>
+        <image name="Help Center Photo 1" width="320" height="160"/>
+        <image name="Help Center Photo 2" width="2048" height="1359"/>
+        <image name="Help Center Photo 3" width="3000" height="3000"/>
+        <image name="Help Center Photo 4" width="3706" height="2498"/>
         <image name="JJ韓" width="2448" height="2448"/>
         <image name="Profile photo of developer" width="194" height="194"/>
         <image name="Setting Buttom" width="21" height="20"/>
         <image name="TabBarButtom-レストラン" width="37" height="28"/>
         <image name="TabBarButtom-単語表" width="38" height="23"/>
         <image name="TabBarButtom-商店" width="33" height="31"/>
-        <image name="TabBarButtom-無作為抽出" width="31" height="30"/>
+        <image name="TabBarButtom-無作為抽出" width="31" height="29"/>
+        <image name="TabBarButton- Garbage Can" width="24" height="32"/>
     </resources>
     <color key="tintColor" red="0.65490196078431373" green="0.80392156862745101" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
 </document>

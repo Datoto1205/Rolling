@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "MainPageBackgroundPhoto.png",
+      "filename" : "Emerald Lake 1x.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "MainPageBackgroundPhoto@2x.png",
+      "filename" : "Emerald Lake 2x.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "MainPageBackgroundPhoto@3x.png",
+      "filename" : "Emerald Lake 3x.jpg",
       "scale" : "3x"
     }
   ],
