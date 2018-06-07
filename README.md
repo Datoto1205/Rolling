@@ -2,7 +2,7 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/L_0Se5BcC_4/0.jpg)](https://youtu.be/L_0Se5BcC_4)
 
-An App to help people decide the restaurant and the decision of delima.
+An App to help people decide the restaurant and the decision of delima. You could tap the picture above to see the demo in another page.
 
 # Getting Started
 
