@@ -6,18 +6,18 @@
 
 An App to help people decide the restaurant and the decision of delima. You could tap the picture above to see the demo in another page.
 
-# Getting Started
+## Getting Started
 
 1. Download my file.
 2. Run the file "Rolling.xcworkspace".
 3. Use the App.
 
-# Platform & Language
+## Platform & Language
 
 * Xcode 9
 * Swift 3 & 4
 
-# Skills I obtain through this project
+## Skills I obtain through this project
 
 * Knowledge about several controller, which included UIViewController, UITabelViewController, MFMailComposeViewController.
 * Knowledge about several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, ScrollView, DatePicker, Segmented Control, and so on.
@@ -28,6 +28,6 @@ An App to help people decide the restaurant and the decision of delima. You coul
 * Introduction of outside function sets of Cocoapods.
 * Knowledge about git.
 
-# Authors
+## Authors
 
 [Li Cheng-En](https://www.linkedin.com/in/li-cheng-en/)
