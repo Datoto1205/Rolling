@@ -343,6 +343,7 @@
                         <segue destination="zY8-ZM-yQ8" kind="show" identifier="ShowTheGuide" id="bIA-2A-H3T"/>
                         <segue destination="K19-mc-DYT" kind="show" identifier="DeveloperIntroduction" id="iaa-uf-47b"/>
                         <segue destination="YTC-B1-tY4" kind="show" identifier="furtherDefineTheTime" id="heN-gn-Ngx"/>
+                        <segue destination="V6V-lm-YjO" kind="show" id="v4s-sq-mjz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1u-Bp-xZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -621,6 +622,46 @@ His dream is to become a richer person with the incorporation of finance and pro
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fz2-aI-nFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3741" y="-630"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="78B-pr-p5j">
+            <objects>
+                <viewController id="V6V-lm-YjO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S2M-HU-4d6"/>
+                        <viewControllerLayoutGuide type="bottom" id="4hZ-v6-Rou"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QJ6-FW-GiP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKY-vB-KAU">
+                                <rect key="frame" x="16" y="578" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73346000909999998" green="0.8313700557" blue="0.79214709999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmy-Yr-Iyf">
+                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-JJ-y7r">
+                                <rect key="frame" x="155" y="278" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7y-TU-9Zp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="1642.6108374384237"/>
         </scene>
         <!--Notification Time-->
         <scene sceneID="ATQ-bv-b1m">

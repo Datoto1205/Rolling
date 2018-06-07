@@ -29,29 +29,12 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         for i in 0...TemporaryGarbageCanLatitude.count - 1 {
             let garbageCanLocation : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: TemporaryGarbageCanLatitude[i], longitude: TemporaryGarbageCanLongtitude[i])
             let pin = PinAnnotation(title: "Free Garbage Can", subtitle: TemporaryGarbageCanDiscription[i], coordinate: garbageCanLocation)
+            
             MapView.addAnnotation(pin)
         }
         
         self.MapView.showsUserLocation = true
     }
-    
-    
-    /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-     //let location = locations[0]
-     
-     //let span : MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
-     //let myLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-     //self.MapView.showsUserLocation = true
-     
-     }
-     
-     func locationManager2() {
-     manager.delegate = self
-     manager.desiredAccuracy = kCLLocationAccuracyBest
-     manager.requestWhenInUseAuthorization()
-     manager.startUpdatingLocation()
-     }*/
-    
     
     func blurEffect() {
         let statWindow = UIApplication.shared.value(forKey:"statusBarWindow") as! UIView
@@ -70,7 +53,8 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         super.viewDidLoad()
         createSpanAndAnnotation()
         blurEffect()
-        //locationManager2()
+        
+        MapView.showsUserLocation = true
         
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]

@@ -70,7 +70,9 @@ class showData {
         expensiveList = ["米卡義式餐坊", "舞子食堂", "義把麵義式廚房", "鬍鬚張滷肉飯"]
     }
     
-    let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946]
-    let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865]
-    let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science."]
+    let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946, 24.942480, 24.946744, 24.946180 ]
+    let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865, 121.369188, 121.371404, 121.369060]
+    let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science.", "Closed to the student dormitory", "Closed to the college of humanities.", "Closed to the basketball court"]
+    
+    
 }
