@@ -4,7 +4,7 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/L_0Se5BcC_4/0.jpg)](https://youtu.be/L_0Se5BcC_4)
 
-An App to help people decide the restaurant and the decision of delima. You could tap the picture above to see the demo in another page.
+An App to help people decide the restaurant and the decision of dilemma. You could tap the picture above to see the demo on another page.
 
 ## Getting Started
 
@@ -12,21 +12,23 @@ An App to help people decide the restaurant and the decision of delima. You coul
 2. Run the file "Rolling.xcworkspace".
 3. Use the App.
 
-## Platform & Language
+## Software & Platform & Language
 
+* Adobe XD
 * Xcode 9
 * Swift 3 & 4
 
 ## Skills I obtain through this project
 
-* Knowledge about several controller, which included UIViewController, UITabelViewController, MFMailComposeViewController.
-* Knowledge about several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, ScrollView, DatePicker, Segmented Control, and so on.
-* Some knowledge about Mapkit and notification.
-* Knowledge about MVC structure and object-oriented programming.
+* Knowledge of several controllers, which included UIViewController, UITabelViewController, MFMailComposeViewController.
+* Knowledge of several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, ScrollView, DatePicker, Segmented Control, and so on.
+* Some knowledge of Mapkit and notification.
+* Knowledge of MVC structure and object-oriented programming.
 * Introduction of Google advertisement banner.
-* Basic kowledge about how to create Core Data, fetch & delete & save new data of Core Data.
+* Basic knowledge of how to create Core Data, fetch & delete & save new data of Core Data.
 * Introduction of outside function sets of Cocoapods.
-* Knowledge about git.
+* Knowledge of git.
+* Knowledge of how to use Adobe XD to design the framework of App and user experience.
 
 ### Authors
 
