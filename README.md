@@ -12,13 +12,10 @@ An App to help people decide the restaurant and the decision of delima. You coul
 2. Run the file "Rolling.xcworkspace".
 3. Use the App.
 
-# Prerequisites
+# Platform & Language
 
-1. Xcode 9
-
-# Built With
-
-1. Swift 3 & 4
+* Xcode 9
+* Swift 3 & 4
 
 # Skills I obtain through this project
 
@@ -33,8 +30,4 @@ An App to help people decide the restaurant and the decision of delima. You coul
 
 # Authors
 
-Li Cheng-En
-
-# Acknowledgments
-
-I refer to some others codes on several websites.
+[Li Cheng-En](https://www.linkedin.com/in/li-cheng-en/)
