@@ -64,6 +64,22 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         BannerAD.load(GADRequest())
     }
     
+    
+    /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let location = locations[0]
+    
+    let span : MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+    let myLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+    self.MapView.showsUserLocation = true
+    }
+    
+    func locationManager2() {
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+    }*/
+    
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .default
     }
