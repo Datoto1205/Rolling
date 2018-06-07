@@ -22,14 +22,14 @@ An App to help people decide the restaurant and the decision of delima. You coul
 
 # Skills I obtain through this project
 
-1. Knowledge about several controller, which included UIViewController, UITabelViewController, MFMailComposeViewController.
-2. Knowledge about several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, ScrollView, DatePicker, Segmented Control, and so on.
-3. Some knowledge about Mapkit and notification.
-4. Knowledge about MVC structure and object-oriented programming.
-5. Introduction of Google advertisement banner.
-6. Basic kowledge about how to create Core Data, fetch & delete & save new data of Core Data.
-7. Introduction of outside function sets of Cocoapods.
-8. Knowledge about git.
+* Knowledge about several controller, which included UIViewController, UITabelViewController, MFMailComposeViewController.
+* Knowledge about several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, ScrollView, DatePicker, Segmented Control, and so on.
+* Some knowledge about Mapkit and notification.
+* Knowledge about MVC structure and object-oriented programming.
+* Introduction of Google advertisement banner.
+* Basic kowledge about how to create Core Data, fetch & delete & save new data of Core Data.
+* Introduction of outside function sets of Cocoapods.
+* Knowledge about git.
 
 # Authors
 
