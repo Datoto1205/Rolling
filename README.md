@@ -28,6 +28,6 @@ An App to help people decide the restaurant and the decision of delima. You coul
 * Introduction of outside function sets of Cocoapods.
 * Knowledge about git.
 
-## Authors
+### Authors
 
 [Li Cheng-En](https://www.linkedin.com/in/li-cheng-en/)
