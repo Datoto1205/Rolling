@@ -70,9 +70,11 @@ class showData {
         expensiveList = ["米卡義式餐坊", "舞子食堂", "義把麵義式廚房", "鬍鬚張滷肉飯"]
     }
     
-    let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946, 24.942480, 24.946744, 24.946180 ]
-    let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865, 121.369188, 121.371404, 121.369060]
-    let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science.", "Closed to the student dormitory", "Closed to the college of humanities.", "Closed to the basketball court"]
+    let garbageCanLatitudeArray = [24.946274, 24.947323, 24.944946, 24.942480, 24.946744, 24.946180, 24.944459, 24.940831, 24.943106, 24.942074, 24.942240, 24.943142, 24.941825, 24.939692 ]
+    let garbageCanLontitudeArray = [121.372195, 121.371415, 121.369865, 121.369188, 121.371404, 121.369060, 121.373554, 121.368343, 121.368031, 121.367381, 121.366298, 121.365316, 121.364124, 121.364266]
+    let garbageCanDiscription = ["Closed to the college of business.", "Closed to second front door.", "Closed to the college of social science.", "Closed to the boy student dormitory", "Closed to the college of humanities.", "Closed to the basketball court", "Closed to the college of law.", "Closed to the girl student dormitory", "Closed to the Mind Lake.", "Closed to the brook near the dormitories.", "Closed to the toilet besides to the brook near the dormitories.", "Closed to the Long-En Gate", "Closed to the baseball field", "Closed to the university outdoor track and field"]
     
     
+    
+   
 }

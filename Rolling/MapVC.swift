@@ -12,7 +12,7 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var BannerAD: GADBannerView!
     
-    //let manager = CLLocationManager()
+    let manager = CLLocationManager()
     
     func createSpanAndAnnotation() {
         let FirstSpan: MKCoordinateSpan = MKCoordinateSpanMake(0.008, 0.008)
@@ -53,6 +53,7 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         super.viewDidLoad()
         createSpanAndAnnotation()
         blurEffect()
+        requestAndShowTheLocationOfUser()
         
         MapView.showsUserLocation = true
         
@@ -64,21 +65,23 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         BannerAD.load(GADRequest())
     }
     
-    
     /*func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    let location = locations[0]
+     let location = locations[0]
+     
+     let span : MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+     let myLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+     self.MapView.showsUserLocation = true
+     }
+     // It seems that this codes is used to create a mapView which center is the location of user, but it is a little bit different from what we want here.
+     */
     
-    let span : MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
-    let myLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-    self.MapView.showsUserLocation = true
-    }
-    
-    func locationManager2() {
+    func requestAndShowTheLocationOfUser() {
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-    }*/
+        // Request the authorization of location, and show the user's location on the map.
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .default
@@ -89,6 +92,11 @@ class MapVC: UIViewController, GADBannerViewDelegate, CLLocationManagerDelegate 
         UIApplication.shared.statusBarStyle = .lightContent
     }
     // Return the color of status bar.
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        manager.stopUpdatingLocation()
+        // Track user's location would consume more electricity, so we should disable this function when the user leave the page so that we could save more energy.
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

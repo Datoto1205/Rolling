@@ -184,6 +184,8 @@ class SettingTVController: UITableViewController, MFMailComposeViewControllerDel
             orderOfSendAnEmailToReportTheProblem()
         } else if tableView.indexPathForSelectedRow?.row == 1 && tableView.indexPathForSelectedRow?.section == 2 {
             performSegue(withIdentifier: "DeveloperIntroduction", sender: self)
+        } else if tableView.indexPathForSelectedRow?.row == 2 && tableView.indexPathForSelectedRow?.section == 2 {
+            performSegue(withIdentifier: "errorSegue", sender: self)
         }
         
         tableView.deselectRow(at: indexPath, animated: true)

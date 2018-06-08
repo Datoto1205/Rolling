@@ -344,6 +344,7 @@
                         <segue destination="K19-mc-DYT" kind="show" identifier="DeveloperIntroduction" id="iaa-uf-47b"/>
                         <segue destination="YTC-B1-tY4" kind="show" identifier="furtherDefineTheTime" id="heN-gn-Ngx"/>
                         <segue destination="V6V-lm-YjO" kind="show" id="v4s-sq-mjz"/>
+                        <segue destination="AMM-Fq-r79" kind="show" identifier="errorSegue" id="SS0-wm-eVn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1u-Bp-xZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -742,6 +743,36 @@ His dream is to become a richer person with the incorporation of finance and pro
                 <exit id="naB-xa-A3S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2745" y="1643"/>
+        </scene>
+        <!--Error View Controller-->
+        <scene sceneID="YrQ-IT-Xrk">
+            <objects>
+                <viewController id="AMM-Fq-r79" customClass="errorViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zNH-bo-jfi"/>
+                        <viewControllerLayoutGuide type="bottom" id="aON-H9-sgs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HF6-4V-vit">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-ei-t0J">
+                                <rect key="frame" x="177" y="396" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nE8-ei-t0J" firstAttribute="centerX" secondItem="HF6-4V-vit" secondAttribute="centerX" id="1f2-qA-FQT"/>
+                            <constraint firstItem="nE8-ei-t0J" firstAttribute="centerY" secondItem="HF6-4V-vit" secondAttribute="centerY" id="efa-Ma-eXB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorIndicator" destination="nE8-ei-t0J" id="8eU-zw-sib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSX-Pv-coR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786" y="1643"/>
         </scene>
         <!--Resuaurant ResultV Controller-->
         <scene sceneID="3Hu-KU-ZDo">
