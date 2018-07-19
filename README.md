@@ -1,6 +1,12 @@
 ![github readme head picture](https://user-images.githubusercontent.com/32284698/41082506-2dcf25be-6a61-11e8-8803-d84321bea1b1.png)
 
 # Rolling
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/L_0Se5BcC_4/0.jpg)](https://youtu.be/L_0Se5BcC_4)
 
