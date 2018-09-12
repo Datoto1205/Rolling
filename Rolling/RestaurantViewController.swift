@@ -34,6 +34,7 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         // Actually, I could set different tableViewCell in different section.
         
         cell.RestaurantPicture.image = UIImage(named: (restaurantName[indexPath.row] + ".jpg"))
+        
         cell.RestaurantName.text! = restaurantName[indexPath.row]
         cell.RestaurantDescription.text! = restaurantSites[indexPath.row]
         
@@ -103,6 +104,12 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func downloadPics(url: String) -> UIImage {
+        let data = try? Data(contentsOf: URL(string: url)!)
+        return UIImage(data: data!)!
+        // This function was ritten by some unknown friends on the internet.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

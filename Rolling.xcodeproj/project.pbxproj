@@ -27,6 +27,7 @@
 		1B712F951FA9ED6F00EAB50B /* PinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B712F941FA9ED6F00EAB50B /* PinData.swift */; };
 		1B82997E20C217C2007215D1 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B82997C20C217C2007215D1 /* CoreData.xcdatamodeld */; };
 		1B8C93851FB6EA08004B21BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8C93841FB6EA08004B21BC /* CoreLocation.framework */; };
+		1B929CBF214957D7006BE84D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B929CBE214957D7006BE84D /* CollectionViewController.swift */; };
 		1BAD97701F6E1408005994AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD976F1F6E1408005994AF /* AppDelegate.swift */; };
 		1BAD97751F6E1408005994AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97731F6E1408005994AF /* Main.storyboard */; };
 		1BAD97771F6E1408005994AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAD97761F6E1408005994AF /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */; };
 		1BDC90441F7A49BD00E566EE /* RestaurantStatusVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC90431F7A49BD00E566EE /* RestaurantStatusVController.swift */; };
 		1BDC90461F7A50E300E566EE /* Straight Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC90451F7A50E300E566EE /* Straight Line.swift */; };
+		1BDE29AD21495A8B00E4007D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE29AC21495A8B00E4007D /* CollectionViewCell.swift */; };
 		1BF4BF891F870B540093DCE0 /* SettingTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4BF881F870B540093DCE0 /* SettingTVController.swift */; };
 		1BFF739D20C6D63B00DE919C /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF739C20C6D63B00DE919C /* Pods */; };
 		F0362CEF19EF39B350A54670 /* Pods_Rolling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2262FAE004A4871AD5DB7F6D /* Pods_Rolling.framework */; };
@@ -81,6 +83,7 @@
 		1B712F941FA9ED6F00EAB50B /* PinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinData.swift; sourceTree = "<group>"; };
 		1B82997D20C217C2007215D1 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		1B8C93841FB6EA08004B21BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1B929CBE214957D7006BE84D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		1BAD976C1F6E1408005994AF /* Rolling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAD976F1F6E1408005994AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BAD97741F6E1408005994AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		1BD1BA2A1F84DBBD00202961 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		1BDC90431F7A49BD00E566EE /* RestaurantStatusVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantStatusVController.swift; sourceTree = "<group>"; };
 		1BDC90451F7A50E300E566EE /* Straight Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Straight Line.swift"; sourceTree = "<group>"; };
+		1BDE29AC21495A8B00E4007D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1BF4BF881F870B540093DCE0 /* SettingTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTVController.swift; sourceTree = "<group>"; };
 		1BFF739C20C6D63B00DE919C /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		1BFF739F20C6D64000DE919C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				1B712F961FA9F47D00EAB50B /* GarbageCanMap */,
 				1BAD97821F6E145A005994AF /* Supporting Files */,
 				1BAD97731F6E1408005994AF /* Main.storyboard */,
+				1B929CBE214957D7006BE84D /* CollectionViewController.swift */,
+				1BDE29AC21495A8B00E4007D /* CollectionViewCell.swift */,
 				1B6DBD5220C68ACD00CCEE92 /* OtherNVController.swift */,
 				1B10ED251F6FE7770075DB87 /* ShowData.swift */,
 				1BAD97851F6E23CB005994AF /* TabBarController.swift */,
@@ -543,6 +549,7 @@
 				1B10ED2B1F7369C80075DB87 /* ChoosingViewController.swift in Sources */,
 				1B257B2020B7AE3C007FA804 /* RandomSelectionViewController.swift in Sources */,
 				1B10ED221F6FC8570075DB87 /* RestaurantTableViewCell.swift in Sources */,
+				1BDE29AD21495A8B00E4007D /* CollectionViewCell.swift in Sources */,
 				1BC83E0720BD579300CFBE7B /* IntroductionOfBuilderViewController.swift in Sources */,
 				1BDC90461F7A50E300E566EE /* Straight Line.swift in Sources */,
 				1BD1BA2B1F84DBBD00202961 /* StoreViewController.swift in Sources */,
@@ -550,6 +557,7 @@
 				1BAD97861F6E23CB005994AF /* TabBarController.swift in Sources */,
 				1B2285951F7565E800A7322D /* ResuaurantResultVController.swift in Sources */,
 				1B712F931FA9E47800EAB50B /* MapVC.swift in Sources */,
+				1B929CBF214957D7006BE84D /* CollectionViewController.swift in Sources */,
 				1B356DB320C00A5100BBDAFA /* NotificationTimeViewController.swift in Sources */,
 				1BD1BA291F84DB8100202961 /* AD.swift in Sources */,
 				1B2285931F7504F900A7322D /* ChoosingButtomVController.swift in Sources */,
