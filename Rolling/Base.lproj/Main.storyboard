@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="efb-Je-HEQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Efx-Hx-7DV">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1010,7 +1010,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8O-KJ-s9l">
                                                     <rect key="frame" x="8" y="8" width="359" height="115"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-v6-uin">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-v6-uin">
                                                             <rect key="frame" x="8" y="13" width="88" height="88"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="88" id="jEH-lO-Cjz"/>
@@ -1538,6 +1538,7 @@ His dream is to become a richer person with the incorporation of finance and pro
         <image name="TabBarButtom-レストラン" width="37" height="28"/>
         <image name="TabBarButtom-無作為抽出" width="31" height="29"/>
         <image name="TabBarButton- Garbage Can" width="24" height="32"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <color key="tintColor" red="0.65490196078431373" green="0.80392156862745101" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -17,38 +17,40 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     
     var connectToRestaurantClass = showData()
     var othersIndex = 0
+    var resultDictionary = Dictionary<String, UIImage>()
+    var imagesArray: [UIImage] = []
+    var keysArray: [String] = []
+    var numberOfSuccessAppend: Int = 0
+    var downloadIndicatorExist: Bool = true
     
     let restaurantName = showData().restaurantNameArray
     let restaurantSites = showData().restaurantSitesArray
     //get the data about restaurant's name and discription from other class.
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantName.count
-        // Fetch the number of the components in the matrix.
+    func downloadPics(url: String) {
+        let data = try? Data(contentsOf: URL(string: url)!)
+        if data != nil {
+            do {
+                if let newImage = UIImage(data: data!) {
+                    if newImage != nil {
+                        imagesArray.append(newImage)
+                        keysArray.append(url)
+                        numberOfSuccessAppend += 1
+                        print("The number of photos devices has downloaded successfully: \(numberOfSuccessAppend)")
+                        print("\n")
+                    } else {
+                        print("Image is nil!")
+                    }
+                }
+            } catch {
+                print("Image could not be transferred to UIImage!")
+            }
+        } else {
+            print("Data is unfound!")
+        }
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "specialCell", for: indexPath) as! RestaurantTableViewCell
-        // Use the prototype cell again and again.
-        // Actually, I could set different tableViewCell in different section.
-        
-        cell.RestaurantPicture.image = UIImage(named: (restaurantName[indexPath.row] + ".jpg"))
-        
-        cell.RestaurantName.text! = restaurantName[indexPath.row]
-        cell.RestaurantDescription.text! = restaurantSites[indexPath.row]
-        
-        return (cell)
-        // Show the every restaurant's picture, name and discription, and the order was depended on the array's order.
-    }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        othersIndex = (RestaurantViewList.indexPathForSelectedRow?.row)!
-        performSegue(withIdentifier: "FromResuaurantToIntroduction", sender: self)
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-        // Record the index of the row user selected
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +83,81 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         
         adViewDidReceiveAd(adBannerView)
         //-----(This code is necessary to immobilize the banner.)-----
+        
+        let refreshWork = {
+            self.RestaurantViewList.reloadData()
+            self.RestaurantViewList.refreshControl?.endRefreshing()
+            print("Finish refresh the table!")
+        }
+        
+        let globalQueue = DispatchQueue.global()
+        globalQueue.async {
+            DispatchQueue.global().sync {
+                for i in 0...showData().URLOfRestaurantPics.count-1 {
+                    self.downloadPics(url: showData().URLOfRestaurantPics[i])
+                }
+            }
+            
+            
+            if self.numberOfSuccessAppend == showData().URLOfRestaurantPics.count {
+                for i in (0...(self.numberOfSuccessAppend)-1) {
+                    self.resultDictionary.updateValue(self.imagesArray[i], forKey: self.keysArray[i])
+                }
+                print("resultDictionary update success!")
+            } else {
+                print("resultDictionary update failed!")
+            }
+            
+            DispatchQueue.main.async(execute: refreshWork)
+        }
+    }
+    
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurantName.count
+        // Fetch the number of the components in the matrix.
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "specialCell", for: indexPath) as! RestaurantTableViewCell
+        // Use the prototype cell again and again.
+        // Actually, I could set different tableViewCell in different section.
+        
+        //cell.RestaurantPicture.image = UIImage(named: (restaurantName[indexPath.row] + ".jpg"))
+        
+        for (keysArray, imagesArray) in resultDictionary {
+            if "\(keysArray)" == showData().URLOfRestaurantPics[indexPath.row] {
+                cell.RestaurantPicture.image = imagesArray
+            } else {
+                print("Try to match with another key!")
+            }
+            downloadIndicatorExist = false
+        }
+        
+        cell.RestaurantName.text! = restaurantName[indexPath.row]
+        cell.RestaurantDescription.text! = restaurantSites[indexPath.row]
+        
+        let downloadIndicator = UIActivityIndicatorView(frame: CGRect(x: cell.RestaurantPicture.center.x, y: cell.RestaurantPicture.center.y, width: 20, height: 20))
+        downloadIndicator.color = UIColor.gray
+        downloadIndicator.startAnimating()
+        if downloadIndicatorExist == true {
+        cell.addSubview(downloadIndicator)
+        } else {
+        downloadIndicator.removeFromSuperview()
+        }
+        
+        return (cell)
+        // Show the every restaurant's picture, name and discription, and the order was depended on the array's order.
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        othersIndex = (RestaurantViewList.indexPathForSelectedRow?.row)!
+        performSegue(withIdentifier: "FromResuaurantToIntroduction", sender: self)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        // Record the index of the row user selected
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -104,12 +181,6 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func downloadPics(url: String) -> UIImage {
-        let data = try? Data(contentsOf: URL(string: url)!)
-        return UIImage(data: data!)!
-        // This function was ritten by some unknown friends on the internet.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
