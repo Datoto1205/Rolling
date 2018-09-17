@@ -22,10 +22,12 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
     var keysArray: [String] = []
     var numberOfSuccessAppend: Int = 0
     var downloadIndicatorExist: Bool = true
+    var shouldPresentAlert: Bool = false
     
     let restaurantName = showData().restaurantNameArray
     let restaurantSites = showData().restaurantSitesArray
     //get the data about restaurant's name and discription from other class.
+    
     
     func downloadPics(url: String) {
         let data = try? Data(contentsOf: URL(string: url)!)
@@ -40,17 +42,27 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
                         print("\n")
                     } else {
                         print("Image is nil!")
+                    self.present(self.showAlertAboutInternet(), animated: true, completion: nil)
                     }
                 }
             } catch {
                 print("Image could not be transferred to UIImage!")
+                self.present(self.showAlertAboutInternet(), animated: true, completion: nil)
             }
         } else {
             print("Data is unfound!")
+            self.present(self.showAlertAboutInternet(), animated: true, completion: nil)
         }
     }
     
-    
+    func showAlertAboutInternet() -> UIAlertController {
+    let alertOfNoGreatInternet = UIAlertController(title: "Internet is instable!", message: "Check your connection of internet again to get access to the data.", preferredStyle: .alert)
+    let alertAction1 = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: {ACTION in
+        print("Please Go Back!")})
+        
+        alertOfNoGreatInternet.addAction(alertAction1)
+        return alertOfNoGreatInternet
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,10 +118,13 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
                 print("resultDictionary update success!")
             } else {
                 print("resultDictionary update failed!")
+                self.present(self.showAlertAboutInternet(), animated: true, completion: nil)
             }
             
             DispatchQueue.main.async(execute: refreshWork)
         }
+        
+        
     }
     
     

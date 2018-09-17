@@ -92,6 +92,12 @@ class showData {
         "https://user-images.githubusercontent.com/32284698/45370148-2ae73300-b61a-11e8-9214-60a5fdea1ef6.jpg"
         ]
     
+    let URLOfUniversityPhoto = [
+        "https://proxy-photo-shrink.network.com.tw/m1.php?https://photo.network.com.tw/scenery/C035D278-837F-40DA-A833-D4B2DE06766A_c.jpg",
+        "https://icrvb3jy.xinmedia.com/solomo/article/118054/1435AE62-80CA-ED9D-9419-15C0F08BD2C2.jpg",
+        "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537179001021&di=5f88b741bbaee35df135b6cd54af2974&imgtype=0&src=http%3A%2F%2Fzfs1.fiiimg.com%2Fzfs1%2Ffw%2F13%2F235%2F17011420130823114020_720x540.jpg"
+    ]
+    let nameOfUniversityList = ["National Taipei University", "National Taiwan University", "Fudan University"]
     
     let vegetarianList = ["四季花開健康蔬食"]
     let spicyList = [""]

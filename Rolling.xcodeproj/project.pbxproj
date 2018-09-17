@@ -219,8 +219,6 @@
 				1B712F961FA9F47D00EAB50B /* GarbageCanMap */,
 				1BAD97821F6E145A005994AF /* Supporting Files */,
 				1BAD97731F6E1408005994AF /* Main.storyboard */,
-				1B929CBE214957D7006BE84D /* CollectionViewController.swift */,
-				1BDE29AC21495A8B00E4007D /* CollectionViewCell.swift */,
 				1B6DBD5220C68ACD00CCEE92 /* OtherNVController.swift */,
 				1B10ED251F6FE7770075DB87 /* ShowData.swift */,
 				1BAD97851F6E23CB005994AF /* TabBarController.swift */,
@@ -273,6 +271,8 @@
 		1BF94DBE1F77E7920076741D /* Restaurants Part */ = {
 			isa = PBXGroup;
 			children = (
+				1B929CBE214957D7006BE84D /* CollectionViewController.swift */,
+				1BDE29AC21495A8B00E4007D /* CollectionViewCell.swift */,
 				1B10ED211F6FC8570075DB87 /* RestaurantTableViewCell.swift */,
 				1B10ED1F1F6FC48E0075DB87 /* RestaurantViewController.swift */,
 				1BDC90431F7A49BD00E566EE /* RestaurantStatusVController.swift */,

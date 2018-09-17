@@ -435,44 +435,55 @@ His dream is to become a richer person with the incorporation of finance and pro
             </objects>
             <point key="canvasLocation" x="3741" y="799"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--University List-->
         <scene sceneID="rg0-Kf-8Tf">
             <objects>
                 <collectionViewController id="efb-Je-HEQ" customClass="CollectionViewController" customModule="Rolling" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="l6b-Hc-8br">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="l6b-Hc-8br">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ijO-4M-Ysd">
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ijO-4M-Ysd">
                             <size key="itemSize" width="179" height="198"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="20" maxX="5" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChooseUniversity" id="qto-Y0-0UP" customClass="CollectionViewCell" customModule="Rolling" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="179" height="198"/>
+                                <rect key="frame" x="5" y="20" width="179" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="179" height="198"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-dH-vy1">
-                                            <rect key="frame" x="68" y="177" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-UH-obi">
+                                            <rect key="frame" x="0.0" y="0.0" width="179" height="198"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-dH-vy1">
+                                            <rect key="frame" x="5" y="153" width="169" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="ade-Ey-VlQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="textColor" red="0.93730109930000005" green="0.93721443410000005" blue="0.95685821770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-UH-obi">
-                                            <rect key="frame" x="20" y="35" width="105" height="118"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" red="0.54575467109999998" green="0.79595053199999999" blue="0.80392247439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="3aa-dH-vy1" firstAttribute="leading" secondItem="qto-Y0-0UP" secondAttribute="leading" constant="5" id="Gt7-3P-JbI"/>
+                                    <constraint firstAttribute="bottom" secondItem="3aa-dH-vy1" secondAttribute="bottom" constant="5" id="Hsq-H9-CbF"/>
+                                    <constraint firstAttribute="trailing" secondItem="AqZ-UH-obi" secondAttribute="trailing" id="VIU-kI-D1a"/>
+                                    <constraint firstItem="AqZ-UH-obi" firstAttribute="leading" secondItem="qto-Y0-0UP" secondAttribute="leading" id="gJB-we-yGu"/>
+                                    <constraint firstAttribute="bottom" secondItem="AqZ-UH-obi" secondAttribute="bottom" id="gaH-Kw-5MP"/>
+                                    <constraint firstAttribute="trailing" secondItem="3aa-dH-vy1" secondAttribute="trailing" constant="5" id="uGa-lJ-QQp"/>
+                                    <constraint firstItem="AqZ-UH-obi" firstAttribute="top" secondItem="qto-Y0-0UP" secondAttribute="top" id="yaF-A5-Ngb"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="universityImage" destination="AqZ-UH-obi" id="6JI-KM-9b0"/>
-                                    <outlet property="universityName" destination="3aa-dH-vy1" id="AAi-ok-rWt"/>
+                                    <outlet property="universityImage" destination="AqZ-UH-obi" id="WYC-0A-TvJ"/>
+                                    <outlet property="universityName" destination="3aa-dH-vy1" id="zhP-g1-2wK"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -481,10 +492,14 @@ His dream is to become a richer person with the incorporation of finance and pro
                             <outlet property="delegate" destination="efb-Je-HEQ" id="szg-ZO-vbG"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="University List" id="3z0-U8-Zcx"/>
+                    <connections>
+                        <segue destination="LqE-Qy-WjJ" kind="show" identifier="ChooseTheRestaurant" id="4rW-hf-OrV"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gm-Kb-tnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5208.8000000000002" y="377.58620689655174"/>
+            <point key="canvasLocation" x="1708" y="-958"/>
         </scene>
         <!--Help Center-->
         <scene sceneID="XeA-eh-SPT">
@@ -673,7 +688,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fz2-aI-nFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741" y="-630"/>
+            <point key="canvasLocation" x="3741" y="-283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="78B-pr-p5j">
@@ -1096,7 +1111,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H48-pz-YUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="8xG-XU-eai"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="-958"/>
+            <point key="canvasLocation" x="2745" y="-958"/>
         </scene>
         <!--Restaurant StatusV Controller-->
         <scene sceneID="Lsp-eY-Hes">
@@ -1252,7 +1267,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3g-lQ-KCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="-958"/>
+            <point key="canvasLocation" x="3742" y="-1428"/>
         </scene>
         <!--Store-->
         <scene sceneID="BWp-CG-Os2">
@@ -1453,7 +1468,7 @@ His dream is to become a richer person with the incorporation of finance and pro
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LqE-Qy-WjJ" kind="relationship" relationship="rootViewController" id="6he-HK-bgz"/>
+                        <segue destination="efb-Je-HEQ" kind="relationship" relationship="rootViewController" id="Tc5-Dy-2La"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLc-5Y-tyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
