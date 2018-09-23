@@ -36,10 +36,10 @@ class CollectionViewController: UICollectionViewController {
                 }
             }
             
-            
-            for i in 0...self.universityImageArray.count - 1 {
-                self.universityImageDictionary.updateValue(self.universityImageArray[i], forKey: self.universityPhotoURLArray[i])
-                
+            if self.universityImageArray.count > 2 {
+                for i in 0...self.universityImageArray.count - 1 {
+                    self.universityImageDictionary.updateValue(self.universityImageArray[i], forKey: self.universityPhotoURLArray[i])
+                }
             }
             
             DispatchQueue.main.async {

@@ -142,6 +142,7 @@ class RestaurantViewController: UIViewController, UITableViewDataSource, UITable
         
         //cell.RestaurantPicture.image = UIImage(named: (restaurantName[indexPath.row] + ".jpg"))
         
+        
         for (keysArray, imagesArray) in resultDictionary {
             if "\(keysArray)" == showData().URLOfRestaurantPics[indexPath.row] {
                 cell.RestaurantPicture.image = imagesArray
