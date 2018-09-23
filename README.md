@@ -28,7 +28,7 @@ An App to help people decide the restaurant and the decision of dilemma. You cou
 
 * Knowledge of several controllers, which included UIViewController, UITabelViewController, UICollectionView, MFMailComposeViewController.
 * Knowledge of several components of UIKit, which included UIImageView, UIButton, UILabel, UIText, UISwitch, UIActivityIndicatorView, ScrollView, DatePicker, Segmented Control, and so on.
-* Some knowledge of Mapkit, Notification and GCD.
+* Some knowledge of Mapkit, Notification, JSON and GCD.
 * Knowledge of MVC & MVVM structure and object-oriented programming.
 * Introduction of Google advertisement banner.
 * Basic knowledge of how to create Core Data, fetch & delete & save new data of Core Data.
